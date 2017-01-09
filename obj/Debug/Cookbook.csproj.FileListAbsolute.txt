@@ -1,1 +1,2 @@
 c:\users\polina\documents\visual studio 2015\Projects\Cookbook\Cookbook\bin\Debug\Cookbook.exe.config
+C:\Users\polina\Documents\GitHub\Cookbook\Cookbook\bin\Debug\Cookbook.exe.config
