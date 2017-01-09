@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cookbook
+namespace WindowsFormsApplication1
 {
     static class Program
     {
@@ -16,8 +16,7 @@ namespace Cookbook
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            MessageBox.Show("Hello world");
+            Application.Run(new maincs());
         }
     }
 }
