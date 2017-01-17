@@ -22,7 +22,7 @@ namespace WindowsFormsApplication1
 
         private async void Insert_Load(object sender, EventArgs e)
         {
-           string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\Database1.mdf;Integrated Security=True";
+           string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
             SqlConnection = new SqlConnection(connectionString);
 

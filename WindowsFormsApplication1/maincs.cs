@@ -42,5 +42,11 @@ namespace WindowsFormsApplication1
             f = new Form1();
             f.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            f = new Show();
+            f.Show();
+        }
     }
 }
