@@ -67,3 +67,4 @@ C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\Win
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
