@@ -122,5 +122,15 @@ namespace WindowsFormsApplication1
             await command.ExecuteNonQueryAsync();
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void step1TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

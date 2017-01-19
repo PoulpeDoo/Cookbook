@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1
                 string[] str = GetText(i).Split('\n');
 
                 string[] img = GetImg(i).Split('\n');
-                for (int j = 0; j < str.Length - 1; j++)
+                for (int j = 0; j < str.Length - 2; j++)
                 {
 
                     Button btn = new Button();
