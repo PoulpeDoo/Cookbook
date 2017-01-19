@@ -15,6 +15,8 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        public EventHandler Addresepy_Load { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -32,17 +34,25 @@ namespace WindowsFormsApplication1
                 string[] str = GetText(i).Split('\n');
 
                 string[] img = GetImg(i).Split('\n');
-                for (int j = 0; j < str.Length - 1; j++)
+                for (int j = 0; j < str.Length - 2; j++)
                 {
+                    if (img[j] == "")
+                    {
+                        img[j] = "http://cdn1.imgbb.ru/community/118/1181993/cf13d0754deabbc16df8728701923540.jpg";
+                    }
 
                     Button btn = new Button();
-                    btn.Left = left;
-                    btn.Top = top;
+                    btn.Left   = left;
+                    btn.Top    = top;
                     btn.Height = 60;
-                    btn.Width = 200;
-                    btn.Text = str[j];
+                    btn.Width  = 200;
+                    btn.Text   = str[j];
+                    btn.Tag    = "resepty";
                     this.Controls.Add(btn);
-                    top += btn.Height + 2;
+                    top       += btn.Height + 2;
+                    btn.Click += new System.EventHandler(resepy);
+
+
                     PictureBox pic = new PictureBox();
                     pic.Left = left2;
                     pic.Top = top2;
@@ -52,10 +62,7 @@ namespace WindowsFormsApplication1
                     this.Controls.Add(pic);
                     top2 += pic.Height + 2;
                     pic.SizeMode = PictureBoxSizeMode.CenterImage;
-                    if (btn.Text == "Утка, фаршированная яблоками и квашеной капустой ")
-                    {
-
-                    }
+                    
                 }
 
             }
@@ -147,5 +154,9 @@ namespace WindowsFormsApplication1
             return countPage;
         }
 
+        private void resepy(object sender, EventArgs e)
+        {
+            MessageBox.Show("Тест");
+        }
     }
 }
