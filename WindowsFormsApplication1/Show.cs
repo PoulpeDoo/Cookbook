@@ -37,7 +37,8 @@ namespace WindowsFormsApplication1
           int leftpb = 100;
           int topbt = 85;
           int leftbt = 410;
-          
+          int leftTxt = 410;
+            int topTxt = 135;
 
             using (SqlConnection)
             {
@@ -59,9 +60,17 @@ namespace WindowsFormsApplication1
                     this.Controls.Add(bt);
                     topbt += bt.Height + 170;
 
-
-
-
+                    TextBox txt = new TextBox();
+                    txt.Left = leftTxt;
+                    txt.Top = topTxt;
+                    txt.ReadOnly = true;
+                    txt.Multiline = true;
+                    txt.Height = 150;
+                    txt.Width = 350;
+                    txt.ScrollBars = ScrollBars.Vertical;
+                    txt.Text = Convert.ToString(reader["Opicanie"]);
+                    this.Controls.Add(txt);
+                    topTxt += txt.Height + 60;
 
                     PictureBox pb = new PictureBox();
                     pb.Left = leftpb;
