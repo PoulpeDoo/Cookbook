@@ -14,8 +14,8 @@ namespace WindowsFormsApplication1
     public partial class Show : Form
 
     {
+        public int IdResepy;
         string result = "";
-        public string id;
         Form f;
         SqlConnection SqlConnection;
            public Show()
@@ -80,13 +80,8 @@ namespace WindowsFormsApplication1
                     pb.ImageLocation = Convert.ToString(reader["ImgUrl"]);
                     this.Controls.Add(pb);
                     toppb += pb.Height + 10;
-                   
-                    
                     bt.Click += new System.EventHandler(resepy);
-                                 
-
-                    // button.TextAlign = MiddleCenter;
-                   result += Convert.ToString(reader["Id"]);
+                    result += Convert.ToString(reader["Id"]);
 
                 }
           
@@ -98,11 +93,10 @@ namespace WindowsFormsApplication1
         public void resepy(object sender , EventArgs e)
         {
 
-            MessageBox.Show(Convert.ToString((sender as Button).Tag));
-            int IdResepy = Int32.Parse(Convert.ToString((sender as Button).Tag));
-            f = new OpenResepy();
-            f.Show();
-
+            IdResepy = Int32.Parse(Convert.ToString((sender as Button).Tag));
+            OpenResepy f = new OpenResepy(this);
+            f.ShowDialog();
+            
         }
         private void progressBar1_Click(object sender, EventArgs e)
         {
@@ -110,4 +104,8 @@ namespace WindowsFormsApplication1
         }
 
     }
+
+
+  
+
 }
