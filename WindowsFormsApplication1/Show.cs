@@ -14,8 +14,8 @@ namespace WindowsFormsApplication1
     public partial class Show : Form
 
     {
+        public int IdResepy;
         string result = "";
-        public string id;
         Form f;
         SqlConnection SqlConnection;
            public Show()
@@ -37,7 +37,8 @@ namespace WindowsFormsApplication1
           int leftpb = 100;
           int topbt = 85;
           int leftbt = 410;
-          
+          int leftTxt = 410;
+            int topTxt = 135;
 
             using (SqlConnection)
             {
@@ -59,9 +60,17 @@ namespace WindowsFormsApplication1
                     this.Controls.Add(bt);
                     topbt += bt.Height + 170;
 
-
-
-
+                    TextBox txt = new TextBox();
+                    txt.Left = leftTxt;
+                    txt.Top = topTxt;
+                    txt.ReadOnly = true;
+                    txt.Multiline = true;
+                    txt.Height = 150;
+                    txt.Width = 350;
+                    txt.ScrollBars = ScrollBars.Vertical;
+                    txt.Text = Convert.ToString(reader["Opicanie"]);
+                    this.Controls.Add(txt);
+                    topTxt += txt.Height + 60;
 
                     PictureBox pb = new PictureBox();
                     pb.Left = leftpb;
@@ -71,13 +80,8 @@ namespace WindowsFormsApplication1
                     pb.ImageLocation = Convert.ToString(reader["ImgUrl"]);
                     this.Controls.Add(pb);
                     toppb += pb.Height + 10;
-                   
-                    
                     bt.Click += new System.EventHandler(resepy);
-                                 
-
-                    // button.TextAlign = MiddleCenter;
-                   result += Convert.ToString(reader["Id"]);
+                    result += Convert.ToString(reader["Id"]);
 
                 }
           
@@ -89,11 +93,10 @@ namespace WindowsFormsApplication1
         public void resepy(object sender , EventArgs e)
         {
 
-            MessageBox.Show(Convert.ToString((sender as Button).Tag));
-            int IdResepy = Int32.Parse(Convert.ToString((sender as Button).Tag));
-            f = new OpenResepy();
-            f.Show();
-
+            IdResepy = Int32.Parse(Convert.ToString((sender as Button).Tag));
+            OpenResepy f = new OpenResepy(this);
+            f.ShowDialog();
+            
         }
         private void progressBar1_Click(object sender, EventArgs e)
         {
@@ -101,4 +104,8 @@ namespace WindowsFormsApplication1
         }
 
     }
+
+
+  
+
 }

@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Show));
-=======
             this.label1 = new System.Windows.Forms.Label();
->>>>>>> origin/master
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(292, 32);
+            this.label1.Location = new System.Drawing.Point(464, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(258, 29);
             this.label1.TabIndex = 2;
@@ -49,14 +47,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+            this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1362, 711);
-=======
-            this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(838, 532);
             this.Controls.Add(this.label1);
->>>>>>> origin/master
             this.Name = "Show";
             this.Text = "Show";
             this.Load += new System.EventHandler(this.Show_Load);

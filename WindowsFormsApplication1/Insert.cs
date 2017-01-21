@@ -57,11 +57,13 @@ namespace WindowsFormsApplication1
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO [Table] (Name, Opicanie, Time, NameIng1, SumIng1, MeraIng1, NameIng2, SumIng2, MeraIng2,  NameIng3, SumIng3, MeraIng3, NameIng4, SumIng4, MeraIng4, NameIng5, SumIng5, MeraIng5, NameIng6, SumIng6, MeraIng6, NameIng7, SumIng7, MeraIng7, NameIng8, SumIng8, MeraIng8, NameIng9, SumIng9, MeraIng9, NameIng10, SumIng10, MeraIng10, NameIng11, SumIng11, MeraIng11, NameIng12, SumIng12, MeraIng12, NameIng13, SumIng13, MeraIng13, NameIng14, SumIng14, MeraIng14, NameIng15, SumIng15, MeraIng15, Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9, Step10) VALUES (@Name, @Opicanie, @Time, @NameIng1, @SumIng1, @MeraIng1, @NameIng2, @SumIng2, @MeraIng2, @NameIng3, @SumIng3, @MeraIng3, @NameIng4, @SumIng4, @MeraIng4, @NameIng5, @SumIng5, @MeraIng5, @NameIng6, @SumIng6, @MeraIng6, @NameIng7, @SumIng7, @MeraIng7, @NameIng8, @SumIng8, @MeraIng8, @NameIng9, @SumIng9, @MeraIng9, @NameIng10, @SumIng10, @MeraIng10, @NameIng11, @SumIng11, @MeraIng11, @NameIng12, @SumIng12, @MeraIng12, @NameIng13, @SumIng13, @MeraIng13, @NameIng14, @SumIng14, @MeraIng14, @NameIng15, @SumIng15, @MeraIng15, @Step1, @Step2, @Step3, @Step4, @Step5, @Step6, @Step7, @Step8, @Step9, @Step10)", SqlConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO [Table] (Name, Opicanie, Time, ImgUrl, Person, NameIng1, SumIng1, MeraIng1, NameIng2, SumIng2, MeraIng2,  NameIng3, SumIng3, MeraIng3, NameIng4, SumIng4, MeraIng4, NameIng5, SumIng5, MeraIng5, NameIng6, SumIng6, MeraIng6, NameIng7, SumIng7, MeraIng7, NameIng8, SumIng8, MeraIng8, NameIng9, SumIng9, MeraIng9, NameIng10, SumIng10, MeraIng10, NameIng11, SumIng11, MeraIng11, NameIng12, SumIng12, MeraIng12, NameIng13, SumIng13, MeraIng13, NameIng14, SumIng14, MeraIng14, NameIng15, SumIng15, MeraIng15, Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9, Step10) VALUES (@Name, @Opicanie, @Time, @ImgUrl, @Person, @NameIng1, @SumIng1, @MeraIng1, @NameIng2, @SumIng2, @MeraIng2, @NameIng3, @SumIng3, @MeraIng3, @NameIng4, @SumIng4, @MeraIng4, @NameIng5, @SumIng5, @MeraIng5, @NameIng6, @SumIng6, @MeraIng6, @NameIng7, @SumIng7, @MeraIng7, @NameIng8, @SumIng8, @MeraIng8, @NameIng9, @SumIng9, @MeraIng9, @NameIng10, @SumIng10, @MeraIng10, @NameIng11, @SumIng11, @MeraIng11, @NameIng12, @SumIng12, @MeraIng12, @NameIng13, @SumIng13, @MeraIng13, @NameIng14, @SumIng14, @MeraIng14, @NameIng15, @SumIng15, @MeraIng15, @Step1, @Step2, @Step3, @Step4, @Step5, @Step6, @Step7, @Step8, @Step9, @Step10)", SqlConnection);
 
             command.Parameters.AddWithValue("Name", nameTextBox.Text);
             command.Parameters.AddWithValue("Opicanie", opicanieTextBox.Text);
             command.Parameters.AddWithValue("Time", timeTextBox.Text);
+            command.Parameters.AddWithValue("ImgUrl", textBox1.Text);
+            command.Parameters.AddWithValue("Person", textBox2.Text);
             command.Parameters.AddWithValue("NameIng1", nameIng1TextBox.Text);
             command.Parameters.AddWithValue("NameIng2", nameIng2TextBox.Text);
             command.Parameters.AddWithValue("NameIng3", nameIng3TextBox.Text);
@@ -120,16 +122,6 @@ namespace WindowsFormsApplication1
 
 
             await command.ExecuteNonQueryAsync();
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void step1TextBox_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }
