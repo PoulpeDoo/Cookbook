@@ -216,6 +216,7 @@
   <metadata name="label23.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+<<<<<<< HEAD
   <metadata name="label25.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -223,6 +224,10 @@
     <value>False</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+=======
+
+  <!--<assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+>>>>>>> origin/master
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/4QCqRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
@@ -9117,5 +9122,6 @@
         QYyDk5I5HX/IoANpyDjrz1/rye1AwW3FTyO9NbIGRkdCDTjjBJAyDjGP85oAXuRg4HUEnr/jRkjnBHUd
         eO9ISdwByOe/p9aDnIyRkdeDyPWgAGeQAT6YI+v+NIDxhTzngY6Ud+Scnj88UHO0ENkg4GRjP+cUAf/Z
 </value>
-  </data>
+  </data>-->
+
 </root>

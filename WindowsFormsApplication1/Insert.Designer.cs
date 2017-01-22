@@ -61,9 +61,15 @@
             System.Windows.Forms.Label label20;
             System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label23;
+<<<<<<< HEAD
             System.Windows.Forms.Label label24;
             System.Windows.Forms.Label label25;
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Insert));
+=======
+>>>>>>> origin/master
             this.step10TextBox = new System.Windows.Forms.TextBox();
             this.step8TextBox = new System.Windows.Forms.TextBox();
             this.step7TextBox = new System.Windows.Forms.TextBox();
@@ -127,9 +133,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+=======
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
             label21 = new System.Windows.Forms.Label();
             step10Label = new System.Windows.Forms.Label();
             step9Label = new System.Windows.Forms.Label();
@@ -163,15 +175,25 @@
             label20 = new System.Windows.Forms.Label();
             label22 = new System.Windows.Forms.Label();
             label23 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             label24 = new System.Windows.Forms.Label();
             label25 = new System.Windows.Forms.Label();
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
             this.panel1.SuspendLayout();
+=======
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // label21
             // 
             label21.AutoSize = true;
+<<<<<<< HEAD
             label21.Location = new System.Drawing.Point(465, 267);
+=======
+            label21.Location = new System.Drawing.Point(400, 259);
+>>>>>>> origin/master
             label21.Name = "label21";
             label21.Size = new System.Drawing.Size(34, 13);
             label21.TabIndex = 233;
@@ -198,7 +220,15 @@
             // step8Label
             // 
             step8Label.AutoSize = true;
+<<<<<<< HEAD
             step8Label.Location = new System.Drawing.Point(584, 472);
+=======
+<<<<<<< HEAD
+            step8Label.Location = new System.Drawing.Point(624, 472);
+=======
+            step8Label.Location = new System.Drawing.Point(49, 908);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step8Label.Name = "step8Label";
             step8Label.Size = new System.Drawing.Size(36, 13);
             step8Label.TabIndex = 208;
@@ -207,7 +237,15 @@
             // step7Label
             // 
             step7Label.AutoSize = true;
+<<<<<<< HEAD
             step7Label.Location = new System.Drawing.Point(584, 446);
+=======
+<<<<<<< HEAD
+            step7Label.Location = new System.Drawing.Point(624, 446);
+=======
+            step7Label.Location = new System.Drawing.Point(49, 882);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step7Label.Name = "step7Label";
             step7Label.Size = new System.Drawing.Size(36, 13);
             step7Label.TabIndex = 206;
@@ -216,7 +254,15 @@
             // step6Label
             // 
             step6Label.AutoSize = true;
+<<<<<<< HEAD
             step6Label.Location = new System.Drawing.Point(584, 420);
+=======
+<<<<<<< HEAD
+            step6Label.Location = new System.Drawing.Point(624, 420);
+=======
+            step6Label.Location = new System.Drawing.Point(49, 856);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step6Label.Name = "step6Label";
             step6Label.Size = new System.Drawing.Size(36, 13);
             step6Label.TabIndex = 204;
@@ -225,7 +271,15 @@
             // step5Label
             // 
             step5Label.AutoSize = true;
+<<<<<<< HEAD
             step5Label.Location = new System.Drawing.Point(584, 394);
+=======
+<<<<<<< HEAD
+            step5Label.Location = new System.Drawing.Point(624, 394);
+=======
+            step5Label.Location = new System.Drawing.Point(49, 830);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step5Label.Name = "step5Label";
             step5Label.Size = new System.Drawing.Size(36, 13);
             step5Label.TabIndex = 202;
@@ -234,7 +288,15 @@
             // step4Label
             // 
             step4Label.AutoSize = true;
+<<<<<<< HEAD
             step4Label.Location = new System.Drawing.Point(584, 368);
+=======
+<<<<<<< HEAD
+            step4Label.Location = new System.Drawing.Point(624, 368);
+=======
+            step4Label.Location = new System.Drawing.Point(49, 804);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step4Label.Name = "step4Label";
             step4Label.Size = new System.Drawing.Size(36, 13);
             step4Label.TabIndex = 200;
@@ -243,7 +305,15 @@
             // step3Label
             // 
             step3Label.AutoSize = true;
+<<<<<<< HEAD
             step3Label.Location = new System.Drawing.Point(584, 342);
+=======
+<<<<<<< HEAD
+            step3Label.Location = new System.Drawing.Point(624, 342);
+=======
+            step3Label.Location = new System.Drawing.Point(49, 778);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step3Label.Name = "step3Label";
             step3Label.Size = new System.Drawing.Size(36, 13);
             step3Label.TabIndex = 198;
@@ -252,7 +322,15 @@
             // step2Label
             // 
             step2Label.AutoSize = true;
+<<<<<<< HEAD
             step2Label.Location = new System.Drawing.Point(584, 316);
+=======
+<<<<<<< HEAD
+            step2Label.Location = new System.Drawing.Point(624, 316);
+=======
+            step2Label.Location = new System.Drawing.Point(49, 752);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step2Label.Name = "step2Label";
             step2Label.Size = new System.Drawing.Size(36, 13);
             step2Label.TabIndex = 196;
@@ -261,7 +339,15 @@
             // step1Label
             // 
             step1Label.AutoSize = true;
+<<<<<<< HEAD
             step1Label.Location = new System.Drawing.Point(584, 290);
+=======
+<<<<<<< HEAD
+            step1Label.Location = new System.Drawing.Point(624, 290);
+=======
+            step1Label.Location = new System.Drawing.Point(49, 726);
+>>>>>>> origin/master
+>>>>>>> origin/master
             step1Label.Name = "step1Label";
             step1Label.Size = new System.Drawing.Size(36, 13);
             step1Label.TabIndex = 194;
@@ -270,7 +356,11 @@
             // timeLabel
             // 
             timeLabel.AutoSize = true;
+<<<<<<< HEAD
             timeLabel.Location = new System.Drawing.Point(169, 167);
+=======
+            timeLabel.Location = new System.Drawing.Point(12, 167);
+>>>>>>> origin/master
             timeLabel.Name = "timeLabel";
             timeLabel.Size = new System.Drawing.Size(40, 13);
             timeLabel.TabIndex = 147;
@@ -279,7 +369,11 @@
             // opicanieLabel
             // 
             opicanieLabel.AutoSize = true;
+<<<<<<< HEAD
             opicanieLabel.Location = new System.Drawing.Point(167, 102);
+=======
+            opicanieLabel.Location = new System.Drawing.Point(10, 102);
+>>>>>>> origin/master
             opicanieLabel.Name = "opicanieLabel";
             opicanieLabel.Size = new System.Drawing.Size(57, 13);
             opicanieLabel.TabIndex = 145;
@@ -288,7 +382,11 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
+<<<<<<< HEAD
             nameLabel.Location = new System.Drawing.Point(167, 76);
+=======
+            nameLabel.Location = new System.Drawing.Point(10, 76);
+>>>>>>> origin/master
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(83, 13);
             nameLabel.TabIndex = 143;
@@ -297,7 +395,11 @@
             // label3
             // 
             label3.AutoSize = true;
+<<<<<<< HEAD
             label3.Location = new System.Drawing.Point(169, 312);
+=======
+            label3.Location = new System.Drawing.Point(104, 304);
+>>>>>>> origin/master
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(13, 13);
             label3.TabIndex = 215;
@@ -306,7 +408,11 @@
             // label4
             // 
             label4.AutoSize = true;
+<<<<<<< HEAD
             label4.Location = new System.Drawing.Point(169, 286);
+=======
+            label4.Location = new System.Drawing.Point(104, 278);
+>>>>>>> origin/master
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(13, 13);
             label4.TabIndex = 216;
@@ -315,7 +421,11 @@
             // label5
             // 
             label5.AutoSize = true;
+<<<<<<< HEAD
             label5.Location = new System.Drawing.Point(169, 338);
+=======
+            label5.Location = new System.Drawing.Point(104, 330);
+>>>>>>> origin/master
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(13, 13);
             label5.TabIndex = 217;
@@ -324,7 +434,11 @@
             // label8
             // 
             label8.AutoSize = true;
+<<<<<<< HEAD
             label8.Location = new System.Drawing.Point(169, 390);
+=======
+            label8.Location = new System.Drawing.Point(104, 382);
+>>>>>>> origin/master
             label8.Name = "label8";
             label8.Size = new System.Drawing.Size(13, 13);
             label8.TabIndex = 218;
@@ -333,7 +447,11 @@
             // label7
             // 
             label7.AutoSize = true;
+<<<<<<< HEAD
             label7.Location = new System.Drawing.Point(169, 364);
+=======
+            label7.Location = new System.Drawing.Point(104, 356);
+>>>>>>> origin/master
             label7.Name = "label7";
             label7.Size = new System.Drawing.Size(13, 13);
             label7.TabIndex = 219;
@@ -342,7 +460,11 @@
             // label6
             // 
             label6.AutoSize = true;
+<<<<<<< HEAD
             label6.Location = new System.Drawing.Point(169, 416);
+=======
+            label6.Location = new System.Drawing.Point(104, 408);
+>>>>>>> origin/master
             label6.Name = "label6";
             label6.Size = new System.Drawing.Size(13, 13);
             label6.TabIndex = 220;
@@ -351,7 +473,11 @@
             // label11
             // 
             label11.AutoSize = true;
+<<<<<<< HEAD
             label11.Location = new System.Drawing.Point(169, 468);
+=======
+            label11.Location = new System.Drawing.Point(104, 460);
+>>>>>>> origin/master
             label11.Name = "label11";
             label11.Size = new System.Drawing.Size(13, 13);
             label11.TabIndex = 221;
@@ -360,7 +486,11 @@
             // label10
             // 
             label10.AutoSize = true;
+<<<<<<< HEAD
             label10.Location = new System.Drawing.Point(169, 442);
+=======
+            label10.Location = new System.Drawing.Point(104, 434);
+>>>>>>> origin/master
             label10.Name = "label10";
             label10.Size = new System.Drawing.Size(13, 13);
             label10.TabIndex = 222;
@@ -369,7 +499,11 @@
             // label9
             // 
             label9.AutoSize = true;
+<<<<<<< HEAD
             label9.Location = new System.Drawing.Point(169, 494);
+=======
+            label9.Location = new System.Drawing.Point(104, 486);
+>>>>>>> origin/master
             label9.Name = "label9";
             label9.Size = new System.Drawing.Size(13, 13);
             label9.TabIndex = 223;
@@ -378,7 +512,11 @@
             // label14
             // 
             label14.AutoSize = true;
+<<<<<<< HEAD
             label14.Location = new System.Drawing.Point(169, 546);
+=======
+            label14.Location = new System.Drawing.Point(104, 538);
+>>>>>>> origin/master
             label14.Name = "label14";
             label14.Size = new System.Drawing.Size(19, 13);
             label14.TabIndex = 224;
@@ -387,7 +525,11 @@
             // label13
             // 
             label13.AutoSize = true;
+<<<<<<< HEAD
             label13.Location = new System.Drawing.Point(169, 520);
+=======
+            label13.Location = new System.Drawing.Point(104, 512);
+>>>>>>> origin/master
             label13.Name = "label13";
             label13.Size = new System.Drawing.Size(19, 13);
             label13.TabIndex = 225;
@@ -396,7 +538,11 @@
             // label12
             // 
             label12.AutoSize = true;
+<<<<<<< HEAD
             label12.Location = new System.Drawing.Point(169, 572);
+=======
+            label12.Location = new System.Drawing.Point(104, 564);
+>>>>>>> origin/master
             label12.Name = "label12";
             label12.Size = new System.Drawing.Size(19, 13);
             label12.TabIndex = 226;
@@ -405,7 +551,15 @@
             // label17
             // 
             label17.AutoSize = true;
+<<<<<<< HEAD
             label17.Location = new System.Drawing.Point(169, 626);
+=======
+<<<<<<< HEAD
+            label17.Location = new System.Drawing.Point(39, 635);
+=======
+            label17.Location = new System.Drawing.Point(104, 616);
+>>>>>>> origin/master
+>>>>>>> origin/master
             label17.Name = "label17";
             label17.Size = new System.Drawing.Size(19, 13);
             label17.TabIndex = 227;
@@ -414,7 +568,15 @@
             // label16
             // 
             label16.AutoSize = true;
+<<<<<<< HEAD
             label16.Location = new System.Drawing.Point(169, 600);
+=======
+<<<<<<< HEAD
+            label16.Location = new System.Drawing.Point(39, 609);
+=======
+            label16.Location = new System.Drawing.Point(104, 590);
+>>>>>>> origin/master
+>>>>>>> origin/master
             label16.Name = "label16";
             label16.Size = new System.Drawing.Size(19, 13);
             label16.TabIndex = 228;
@@ -423,7 +585,15 @@
             // label15
             // 
             label15.AutoSize = true;
+<<<<<<< HEAD
             label15.Location = new System.Drawing.Point(169, 652);
+=======
+<<<<<<< HEAD
+            label15.Location = new System.Drawing.Point(39, 661);
+=======
+            label15.Location = new System.Drawing.Point(104, 642);
+>>>>>>> origin/master
+>>>>>>> origin/master
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(19, 13);
             label15.TabIndex = 229;
@@ -432,7 +602,11 @@
             // label19
             // 
             label19.AutoSize = true;
+<<<<<<< HEAD
             label19.Location = new System.Drawing.Point(185, 267);
+=======
+            label19.Location = new System.Drawing.Point(120, 259);
+>>>>>>> origin/master
             label19.Name = "label19";
             label19.Size = new System.Drawing.Size(83, 13);
             label19.TabIndex = 231;
@@ -441,12 +615,17 @@
             // label20
             // 
             label20.AutoSize = true;
+<<<<<<< HEAD
             label20.Location = new System.Drawing.Point(325, 267);
+=======
+            label20.Location = new System.Drawing.Point(260, 259);
+>>>>>>> origin/master
             label20.Name = "label20";
             label20.Size = new System.Drawing.Size(66, 13);
             label20.TabIndex = 232;
             label20.Text = "Количество";
             // 
+<<<<<<< HEAD
             // label22
             // 
             label22.AutoSize = true;
@@ -465,6 +644,8 @@
             label23.TabIndex = 238;
             label23.Text = "Количество персон";
             // 
+=======
+>>>>>>> origin/master
             // step10TextBox
             // 
             this.step10TextBox.Location = new System.Drawing.Point(123, 957);
@@ -472,380 +653,673 @@
             this.step10TextBox.Size = new System.Drawing.Size(380, 20);
             this.step10TextBox.TabIndex = 213;
             // 
+<<<<<<< HEAD
             // step8TextBox
             // 
+<<<<<<< HEAD
             this.step8TextBox.Location = new System.Drawing.Point(658, 469);
+=======
+            this.step8TextBox.Location = new System.Drawing.Point(698, 469);
+=======
+            // step9TextBox
+            // 
+            this.step9TextBox.Location = new System.Drawing.Point(123, 931);
+            this.step9TextBox.Name = "step9TextBox";
+            this.step9TextBox.Size = new System.Drawing.Size(380, 20);
+            this.step9TextBox.TabIndex = 211;
+            // 
+            // step8TextBox
+            // 
+            this.step8TextBox.Location = new System.Drawing.Point(123, 905);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step8TextBox.Name = "step8TextBox";
             this.step8TextBox.Size = new System.Drawing.Size(380, 20);
             this.step8TextBox.TabIndex = 209;
             // 
             // step7TextBox
             // 
+<<<<<<< HEAD
             this.step7TextBox.Location = new System.Drawing.Point(658, 443);
+=======
+<<<<<<< HEAD
+            this.step7TextBox.Location = new System.Drawing.Point(698, 443);
+=======
+            this.step7TextBox.Location = new System.Drawing.Point(123, 879);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step7TextBox.Name = "step7TextBox";
             this.step7TextBox.Size = new System.Drawing.Size(380, 20);
             this.step7TextBox.TabIndex = 207;
             // 
             // step6TextBox
             // 
+<<<<<<< HEAD
             this.step6TextBox.Location = new System.Drawing.Point(658, 417);
+=======
+<<<<<<< HEAD
+            this.step6TextBox.Location = new System.Drawing.Point(698, 417);
+=======
+            this.step6TextBox.Location = new System.Drawing.Point(123, 853);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step6TextBox.Name = "step6TextBox";
             this.step6TextBox.Size = new System.Drawing.Size(380, 20);
             this.step6TextBox.TabIndex = 205;
             // 
             // step5TextBox
             // 
+<<<<<<< HEAD
             this.step5TextBox.Location = new System.Drawing.Point(658, 391);
+=======
+<<<<<<< HEAD
+            this.step5TextBox.Location = new System.Drawing.Point(698, 391);
+=======
+            this.step5TextBox.Location = new System.Drawing.Point(123, 827);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step5TextBox.Name = "step5TextBox";
             this.step5TextBox.Size = new System.Drawing.Size(380, 20);
             this.step5TextBox.TabIndex = 203;
             // 
             // step4TextBox
             // 
+<<<<<<< HEAD
             this.step4TextBox.Location = new System.Drawing.Point(658, 365);
+=======
+<<<<<<< HEAD
+            this.step4TextBox.Location = new System.Drawing.Point(698, 365);
+=======
+            this.step4TextBox.Location = new System.Drawing.Point(123, 801);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step4TextBox.Name = "step4TextBox";
             this.step4TextBox.Size = new System.Drawing.Size(380, 20);
             this.step4TextBox.TabIndex = 201;
             // 
             // step3TextBox
             // 
+<<<<<<< HEAD
             this.step3TextBox.Location = new System.Drawing.Point(658, 339);
+=======
+<<<<<<< HEAD
+            this.step3TextBox.Location = new System.Drawing.Point(698, 339);
+=======
+            this.step3TextBox.Location = new System.Drawing.Point(123, 775);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step3TextBox.Name = "step3TextBox";
             this.step3TextBox.Size = new System.Drawing.Size(380, 20);
             this.step3TextBox.TabIndex = 199;
             // 
             // step2TextBox
             // 
+<<<<<<< HEAD
             this.step2TextBox.Location = new System.Drawing.Point(658, 313);
+=======
+<<<<<<< HEAD
+            this.step2TextBox.Location = new System.Drawing.Point(698, 313);
+=======
+            this.step2TextBox.Location = new System.Drawing.Point(123, 749);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step2TextBox.Name = "step2TextBox";
             this.step2TextBox.Size = new System.Drawing.Size(380, 20);
             this.step2TextBox.TabIndex = 197;
             // 
             // step1TextBox
             // 
+<<<<<<< HEAD
             this.step1TextBox.Location = new System.Drawing.Point(658, 287);
+=======
+<<<<<<< HEAD
+            this.step1TextBox.Location = new System.Drawing.Point(698, 287);
+=======
+            this.step1TextBox.Location = new System.Drawing.Point(123, 723);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.step1TextBox.Name = "step1TextBox";
             this.step1TextBox.Size = new System.Drawing.Size(380, 20);
             this.step1TextBox.TabIndex = 195;
             // 
             // meraIng15TextBox
             // 
+<<<<<<< HEAD
             this.meraIng15TextBox.Location = new System.Drawing.Point(468, 649);
+=======
+<<<<<<< HEAD
+            this.meraIng15TextBox.Location = new System.Drawing.Point(338, 658);
+=======
+            this.meraIng15TextBox.Location = new System.Drawing.Point(403, 639);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.meraIng15TextBox.Name = "meraIng15TextBox";
             this.meraIng15TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng15TextBox.TabIndex = 193;
             // 
             // sumIng15TextBox
             // 
+<<<<<<< HEAD
             this.sumIng15TextBox.Location = new System.Drawing.Point(328, 649);
+=======
+<<<<<<< HEAD
+            this.sumIng15TextBox.Location = new System.Drawing.Point(198, 658);
+=======
+            this.sumIng15TextBox.Location = new System.Drawing.Point(263, 639);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.sumIng15TextBox.Name = "sumIng15TextBox";
             this.sumIng15TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng15TextBox.TabIndex = 192;
             // 
             // nameIng15TextBox
             // 
+<<<<<<< HEAD
             this.nameIng15TextBox.Location = new System.Drawing.Point(188, 649);
+=======
+<<<<<<< HEAD
+            this.nameIng15TextBox.Location = new System.Drawing.Point(58, 658);
+=======
+            this.nameIng15TextBox.Location = new System.Drawing.Point(123, 639);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.nameIng15TextBox.Name = "nameIng15TextBox";
             this.nameIng15TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng15TextBox.TabIndex = 191;
             // 
             // meraIng14TextBox
             // 
+<<<<<<< HEAD
             this.meraIng14TextBox.Location = new System.Drawing.Point(468, 623);
+=======
+<<<<<<< HEAD
+            this.meraIng14TextBox.Location = new System.Drawing.Point(338, 632);
+=======
+            this.meraIng14TextBox.Location = new System.Drawing.Point(403, 613);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.meraIng14TextBox.Name = "meraIng14TextBox";
             this.meraIng14TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng14TextBox.TabIndex = 190;
             // 
             // sumIng14TextBox
             // 
+<<<<<<< HEAD
             this.sumIng14TextBox.Location = new System.Drawing.Point(328, 623);
+=======
+<<<<<<< HEAD
+            this.sumIng14TextBox.Location = new System.Drawing.Point(198, 632);
+=======
+            this.sumIng14TextBox.Location = new System.Drawing.Point(263, 613);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.sumIng14TextBox.Name = "sumIng14TextBox";
             this.sumIng14TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng14TextBox.TabIndex = 189;
             // 
             // nameIng14TextBox
             // 
+<<<<<<< HEAD
             this.nameIng14TextBox.Location = new System.Drawing.Point(188, 623);
+=======
+<<<<<<< HEAD
+            this.nameIng14TextBox.Location = new System.Drawing.Point(58, 632);
+=======
+            this.nameIng14TextBox.Location = new System.Drawing.Point(123, 613);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.nameIng14TextBox.Name = "nameIng14TextBox";
             this.nameIng14TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng14TextBox.TabIndex = 188;
             // 
             // meraIng13TextBox
             // 
+<<<<<<< HEAD
             this.meraIng13TextBox.Location = new System.Drawing.Point(468, 597);
+=======
+<<<<<<< HEAD
+            this.meraIng13TextBox.Location = new System.Drawing.Point(338, 606);
+=======
+            this.meraIng13TextBox.Location = new System.Drawing.Point(403, 587);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.meraIng13TextBox.Name = "meraIng13TextBox";
             this.meraIng13TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng13TextBox.TabIndex = 187;
             // 
             // sumIng13TextBox
             // 
+<<<<<<< HEAD
             this.sumIng13TextBox.Location = new System.Drawing.Point(328, 597);
+=======
+<<<<<<< HEAD
+            this.sumIng13TextBox.Location = new System.Drawing.Point(198, 606);
+=======
+            this.sumIng13TextBox.Location = new System.Drawing.Point(263, 587);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.sumIng13TextBox.Name = "sumIng13TextBox";
             this.sumIng13TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng13TextBox.TabIndex = 186;
             // 
             // nameIng13TextBox
             // 
+<<<<<<< HEAD
             this.nameIng13TextBox.Location = new System.Drawing.Point(188, 597);
+=======
+<<<<<<< HEAD
+            this.nameIng13TextBox.Location = new System.Drawing.Point(58, 606);
+=======
+            this.nameIng13TextBox.Location = new System.Drawing.Point(123, 587);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.nameIng13TextBox.Name = "nameIng13TextBox";
             this.nameIng13TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng13TextBox.TabIndex = 185;
             // 
             // meraIng12TextBox
             // 
+<<<<<<< HEAD
             this.meraIng12TextBox.Location = new System.Drawing.Point(468, 569);
+=======
+            this.meraIng12TextBox.Location = new System.Drawing.Point(403, 561);
+>>>>>>> origin/master
             this.meraIng12TextBox.Name = "meraIng12TextBox";
             this.meraIng12TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng12TextBox.TabIndex = 184;
             // 
             // sumIng12TextBox
             // 
+<<<<<<< HEAD
             this.sumIng12TextBox.Location = new System.Drawing.Point(328, 569);
+=======
+            this.sumIng12TextBox.Location = new System.Drawing.Point(263, 561);
+>>>>>>> origin/master
             this.sumIng12TextBox.Name = "sumIng12TextBox";
             this.sumIng12TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng12TextBox.TabIndex = 183;
             // 
             // nameIng12TextBox
             // 
+<<<<<<< HEAD
             this.nameIng12TextBox.Location = new System.Drawing.Point(188, 569);
+=======
+            this.nameIng12TextBox.Location = new System.Drawing.Point(123, 561);
+>>>>>>> origin/master
             this.nameIng12TextBox.Name = "nameIng12TextBox";
             this.nameIng12TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng12TextBox.TabIndex = 182;
             // 
             // meraIng11TextBox
             // 
+<<<<<<< HEAD
             this.meraIng11TextBox.Location = new System.Drawing.Point(468, 543);
+=======
+            this.meraIng11TextBox.Location = new System.Drawing.Point(403, 535);
+>>>>>>> origin/master
             this.meraIng11TextBox.Name = "meraIng11TextBox";
             this.meraIng11TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng11TextBox.TabIndex = 181;
             // 
             // sumIng11TextBox
             // 
+<<<<<<< HEAD
             this.sumIng11TextBox.Location = new System.Drawing.Point(328, 543);
+=======
+            this.sumIng11TextBox.Location = new System.Drawing.Point(263, 535);
+>>>>>>> origin/master
             this.sumIng11TextBox.Name = "sumIng11TextBox";
             this.sumIng11TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng11TextBox.TabIndex = 180;
             // 
             // nameIng11TextBox
             // 
+<<<<<<< HEAD
             this.nameIng11TextBox.Location = new System.Drawing.Point(188, 543);
+=======
+            this.nameIng11TextBox.Location = new System.Drawing.Point(123, 535);
+>>>>>>> origin/master
             this.nameIng11TextBox.Name = "nameIng11TextBox";
             this.nameIng11TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng11TextBox.TabIndex = 179;
             // 
             // meraIng10TextBox
             // 
+<<<<<<< HEAD
             this.meraIng10TextBox.Location = new System.Drawing.Point(468, 517);
+=======
+            this.meraIng10TextBox.Location = new System.Drawing.Point(403, 509);
+>>>>>>> origin/master
             this.meraIng10TextBox.Name = "meraIng10TextBox";
             this.meraIng10TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng10TextBox.TabIndex = 178;
             // 
             // sumIng10TextBox
             // 
+<<<<<<< HEAD
             this.sumIng10TextBox.Location = new System.Drawing.Point(328, 517);
+=======
+            this.sumIng10TextBox.Location = new System.Drawing.Point(263, 509);
+>>>>>>> origin/master
             this.sumIng10TextBox.Name = "sumIng10TextBox";
             this.sumIng10TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng10TextBox.TabIndex = 177;
             // 
             // nameIng10TextBox
             // 
+<<<<<<< HEAD
             this.nameIng10TextBox.Location = new System.Drawing.Point(188, 517);
+=======
+            this.nameIng10TextBox.Location = new System.Drawing.Point(123, 509);
+>>>>>>> origin/master
             this.nameIng10TextBox.Name = "nameIng10TextBox";
             this.nameIng10TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng10TextBox.TabIndex = 176;
             // 
             // meraIng9TextBox
             // 
+<<<<<<< HEAD
             this.meraIng9TextBox.Location = new System.Drawing.Point(468, 491);
+=======
+            this.meraIng9TextBox.Location = new System.Drawing.Point(403, 483);
+>>>>>>> origin/master
             this.meraIng9TextBox.Name = "meraIng9TextBox";
             this.meraIng9TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng9TextBox.TabIndex = 175;
             // 
             // sumIng9TextBox
             // 
+<<<<<<< HEAD
             this.sumIng9TextBox.Location = new System.Drawing.Point(328, 491);
+=======
+            this.sumIng9TextBox.Location = new System.Drawing.Point(263, 483);
+>>>>>>> origin/master
             this.sumIng9TextBox.Name = "sumIng9TextBox";
             this.sumIng9TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng9TextBox.TabIndex = 174;
             // 
             // nameIng9TextBox
             // 
+<<<<<<< HEAD
             this.nameIng9TextBox.Location = new System.Drawing.Point(188, 491);
+=======
+            this.nameIng9TextBox.Location = new System.Drawing.Point(123, 483);
+>>>>>>> origin/master
             this.nameIng9TextBox.Name = "nameIng9TextBox";
             this.nameIng9TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng9TextBox.TabIndex = 173;
             // 
             // meraIng8TextBox
             // 
+<<<<<<< HEAD
             this.meraIng8TextBox.Location = new System.Drawing.Point(468, 465);
+=======
+            this.meraIng8TextBox.Location = new System.Drawing.Point(403, 457);
+>>>>>>> origin/master
             this.meraIng8TextBox.Name = "meraIng8TextBox";
             this.meraIng8TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng8TextBox.TabIndex = 172;
             // 
             // sumIng8TextBox
             // 
+<<<<<<< HEAD
             this.sumIng8TextBox.Location = new System.Drawing.Point(328, 465);
+=======
+            this.sumIng8TextBox.Location = new System.Drawing.Point(263, 457);
+>>>>>>> origin/master
             this.sumIng8TextBox.Name = "sumIng8TextBox";
             this.sumIng8TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng8TextBox.TabIndex = 171;
             // 
             // nameIng8TextBox
             // 
+<<<<<<< HEAD
             this.nameIng8TextBox.Location = new System.Drawing.Point(188, 465);
+=======
+            this.nameIng8TextBox.Location = new System.Drawing.Point(123, 457);
+>>>>>>> origin/master
             this.nameIng8TextBox.Name = "nameIng8TextBox";
             this.nameIng8TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng8TextBox.TabIndex = 170;
             // 
             // meraIng7TextBox
             // 
+<<<<<<< HEAD
             this.meraIng7TextBox.Location = new System.Drawing.Point(468, 439);
+=======
+            this.meraIng7TextBox.Location = new System.Drawing.Point(403, 431);
+>>>>>>> origin/master
             this.meraIng7TextBox.Name = "meraIng7TextBox";
             this.meraIng7TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng7TextBox.TabIndex = 169;
             // 
             // sumIng7TextBox
             // 
+<<<<<<< HEAD
             this.sumIng7TextBox.Location = new System.Drawing.Point(328, 439);
+=======
+            this.sumIng7TextBox.Location = new System.Drawing.Point(263, 431);
+>>>>>>> origin/master
             this.sumIng7TextBox.Name = "sumIng7TextBox";
             this.sumIng7TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng7TextBox.TabIndex = 168;
             // 
             // nameIng7TextBox
             // 
+<<<<<<< HEAD
             this.nameIng7TextBox.Location = new System.Drawing.Point(188, 439);
+=======
+            this.nameIng7TextBox.Location = new System.Drawing.Point(123, 431);
+>>>>>>> origin/master
             this.nameIng7TextBox.Name = "nameIng7TextBox";
             this.nameIng7TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng7TextBox.TabIndex = 167;
             // 
             // meraIng6TextBox
             // 
+<<<<<<< HEAD
             this.meraIng6TextBox.Location = new System.Drawing.Point(468, 413);
+=======
+            this.meraIng6TextBox.Location = new System.Drawing.Point(403, 405);
+>>>>>>> origin/master
             this.meraIng6TextBox.Name = "meraIng6TextBox";
             this.meraIng6TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng6TextBox.TabIndex = 166;
             // 
             // sumIng6TextBox
             // 
+<<<<<<< HEAD
             this.sumIng6TextBox.Location = new System.Drawing.Point(328, 413);
+=======
+            this.sumIng6TextBox.Location = new System.Drawing.Point(263, 405);
+>>>>>>> origin/master
             this.sumIng6TextBox.Name = "sumIng6TextBox";
             this.sumIng6TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng6TextBox.TabIndex = 165;
             // 
             // nameIng6TextBox
             // 
+<<<<<<< HEAD
             this.nameIng6TextBox.Location = new System.Drawing.Point(188, 413);
+=======
+            this.nameIng6TextBox.Location = new System.Drawing.Point(123, 405);
+>>>>>>> origin/master
             this.nameIng6TextBox.Name = "nameIng6TextBox";
             this.nameIng6TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng6TextBox.TabIndex = 164;
             // 
             // meraIng5TextBox
             // 
+<<<<<<< HEAD
             this.meraIng5TextBox.Location = new System.Drawing.Point(468, 387);
+=======
+            this.meraIng5TextBox.Location = new System.Drawing.Point(403, 379);
+>>>>>>> origin/master
             this.meraIng5TextBox.Name = "meraIng5TextBox";
             this.meraIng5TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng5TextBox.TabIndex = 163;
             // 
             // sumIng5TextBox
             // 
+<<<<<<< HEAD
             this.sumIng5TextBox.Location = new System.Drawing.Point(328, 387);
+=======
+            this.sumIng5TextBox.Location = new System.Drawing.Point(263, 379);
+>>>>>>> origin/master
             this.sumIng5TextBox.Name = "sumIng5TextBox";
             this.sumIng5TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng5TextBox.TabIndex = 162;
             // 
             // nameIng5TextBox
             // 
+<<<<<<< HEAD
             this.nameIng5TextBox.Location = new System.Drawing.Point(188, 387);
+=======
+            this.nameIng5TextBox.Location = new System.Drawing.Point(123, 379);
+>>>>>>> origin/master
             this.nameIng5TextBox.Name = "nameIng5TextBox";
             this.nameIng5TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng5TextBox.TabIndex = 161;
             // 
             // meraIng4TextBox
             // 
+<<<<<<< HEAD
             this.meraIng4TextBox.Location = new System.Drawing.Point(468, 361);
+=======
+            this.meraIng4TextBox.Location = new System.Drawing.Point(403, 353);
+>>>>>>> origin/master
             this.meraIng4TextBox.Name = "meraIng4TextBox";
             this.meraIng4TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng4TextBox.TabIndex = 160;
             // 
             // sumIng4TextBox
             // 
+<<<<<<< HEAD
             this.sumIng4TextBox.Location = new System.Drawing.Point(328, 361);
+=======
+            this.sumIng4TextBox.Location = new System.Drawing.Point(263, 353);
+>>>>>>> origin/master
             this.sumIng4TextBox.Name = "sumIng4TextBox";
             this.sumIng4TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng4TextBox.TabIndex = 159;
             // 
             // nameIng4TextBox
             // 
+<<<<<<< HEAD
             this.nameIng4TextBox.Location = new System.Drawing.Point(188, 361);
+=======
+            this.nameIng4TextBox.Location = new System.Drawing.Point(123, 353);
+>>>>>>> origin/master
             this.nameIng4TextBox.Name = "nameIng4TextBox";
             this.nameIng4TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng4TextBox.TabIndex = 158;
             // 
             // meraIng3TextBox
             // 
+<<<<<<< HEAD
             this.meraIng3TextBox.Location = new System.Drawing.Point(468, 335);
+=======
+            this.meraIng3TextBox.Location = new System.Drawing.Point(403, 327);
+>>>>>>> origin/master
             this.meraIng3TextBox.Name = "meraIng3TextBox";
             this.meraIng3TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng3TextBox.TabIndex = 157;
             // 
             // sumIng3TextBox
             // 
+<<<<<<< HEAD
             this.sumIng3TextBox.Location = new System.Drawing.Point(328, 335);
+=======
+            this.sumIng3TextBox.Location = new System.Drawing.Point(263, 327);
+>>>>>>> origin/master
             this.sumIng3TextBox.Name = "sumIng3TextBox";
             this.sumIng3TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng3TextBox.TabIndex = 156;
             // 
             // nameIng3TextBox
             // 
+<<<<<<< HEAD
             this.nameIng3TextBox.Location = new System.Drawing.Point(188, 335);
+=======
+            this.nameIng3TextBox.Location = new System.Drawing.Point(123, 327);
+>>>>>>> origin/master
             this.nameIng3TextBox.Name = "nameIng3TextBox";
             this.nameIng3TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng3TextBox.TabIndex = 155;
             // 
             // meraIng2TextBox
             // 
+<<<<<<< HEAD
             this.meraIng2TextBox.Location = new System.Drawing.Point(468, 309);
+=======
+            this.meraIng2TextBox.Location = new System.Drawing.Point(403, 301);
+>>>>>>> origin/master
             this.meraIng2TextBox.Name = "meraIng2TextBox";
             this.meraIng2TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng2TextBox.TabIndex = 154;
             // 
             // sumIng2TextBox
             // 
+<<<<<<< HEAD
             this.sumIng2TextBox.Location = new System.Drawing.Point(328, 309);
+=======
+            this.sumIng2TextBox.Location = new System.Drawing.Point(263, 301);
+>>>>>>> origin/master
             this.sumIng2TextBox.Name = "sumIng2TextBox";
             this.sumIng2TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng2TextBox.TabIndex = 153;
             // 
             // nameIng2TextBox
             // 
+<<<<<<< HEAD
             this.nameIng2TextBox.Location = new System.Drawing.Point(188, 309);
+=======
+            this.nameIng2TextBox.Location = new System.Drawing.Point(123, 301);
+>>>>>>> origin/master
             this.nameIng2TextBox.Name = "nameIng2TextBox";
             this.nameIng2TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng2TextBox.TabIndex = 152;
             // 
             // meraIng1TextBox
             // 
+<<<<<<< HEAD
             this.meraIng1TextBox.Location = new System.Drawing.Point(468, 283);
+=======
+            this.meraIng1TextBox.Location = new System.Drawing.Point(403, 275);
+>>>>>>> origin/master
             this.meraIng1TextBox.Name = "meraIng1TextBox";
             this.meraIng1TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng1TextBox.TabIndex = 151;
             // 
             // sumIng1TextBox
             // 
+<<<<<<< HEAD
             this.sumIng1TextBox.Location = new System.Drawing.Point(328, 283);
+=======
+            this.sumIng1TextBox.Location = new System.Drawing.Point(263, 275);
+>>>>>>> origin/master
             this.sumIng1TextBox.Name = "sumIng1TextBox";
             this.sumIng1TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng1TextBox.TabIndex = 150;
             // 
             // nameIng1TextBox
             // 
+<<<<<<< HEAD
             this.nameIng1TextBox.Location = new System.Drawing.Point(188, 283);
+=======
+            this.nameIng1TextBox.Location = new System.Drawing.Point(123, 275);
+>>>>>>> origin/master
             this.nameIng1TextBox.Name = "nameIng1TextBox";
             this.nameIng1TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng1TextBox.TabIndex = 149;
             // 
             // timeTextBox
             // 
+<<<<<<< HEAD
             this.timeTextBox.Location = new System.Drawing.Point(277, 164);
+=======
+            this.timeTextBox.Location = new System.Drawing.Point(120, 164);
+>>>>>>> origin/master
             this.timeTextBox.Name = "timeTextBox";
             this.timeTextBox.Size = new System.Drawing.Size(383, 20);
             this.timeTextBox.TabIndex = 148;
@@ -879,7 +1353,15 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+<<<<<<< HEAD
             this.label18.Location = new System.Drawing.Point(776, 248);
+=======
+<<<<<<< HEAD
+            this.label18.Location = new System.Drawing.Point(816, 248);
+=======
+            this.label18.Location = new System.Drawing.Point(258, 680);
+>>>>>>> origin/master
+>>>>>>> origin/master
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(150, 29);
             this.label18.TabIndex = 230;
@@ -890,7 +1372,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(323, 225);
+=======
+            this.label2.Location = new System.Drawing.Point(258, 217);
+>>>>>>> origin/master
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 29);
             this.label2.TabIndex = 234;
@@ -907,20 +1393,51 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+<<<<<<< HEAD
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(278, 138);
+=======
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new System.Drawing.Point(10, 141);
+            label22.Name = "label22";
+            label22.Size = new System.Drawing.Size(79, 13);
+            label22.TabIndex = 236;
+            label22.Text = "URL картинки";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(121, 138);
+>>>>>>> origin/master
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(383, 20);
             this.textBox1.TabIndex = 237;
             // 
+<<<<<<< HEAD
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(277, 194);
+=======
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new System.Drawing.Point(9, 197);
+            label23.Name = "label23";
+            label23.Size = new System.Drawing.Size(105, 13);
+            label23.TabIndex = 238;
+            label23.Text = "Количество персон";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(120, 194);
+>>>>>>> origin/master
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(383, 20);
             this.textBox2.TabIndex = 239;
             // 
+<<<<<<< HEAD
             // panel1
             // 
             this.panel1.Controls.Add(label25);
@@ -1024,6 +1541,7 @@
             this.panel1.Size = new System.Drawing.Size(1082, 687);
             this.panel1.TabIndex = 240;
             // 
+<<<<<<< HEAD
             // label24
             // 
             label24.AutoSize = true;
@@ -1056,13 +1574,25 @@
             this.textBox4.Size = new System.Drawing.Size(380, 20);
             this.textBox4.TabIndex = 243;
             // 
+=======
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
             // Insert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1362, 711);
             this.Controls.Add(this.panel1);
+=======
+            this.ClientSize = new System.Drawing.Size(563, 1015);
+            this.Controls.Add(label23);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(label22);
+            this.Controls.Add(this.textBox1);
+>>>>>>> origin/master
             this.Controls.Add(this.button1);
             this.Controls.Add(step9Label);
             this.Controls.Add(step10Label);
@@ -1142,8 +1672,14 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel1;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
+=======
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
     }
 }
