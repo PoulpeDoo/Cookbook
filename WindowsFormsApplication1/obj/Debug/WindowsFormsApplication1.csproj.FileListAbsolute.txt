@@ -1,4 +1,4 @@
-C:\Users\polina\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+﻿C:\Users\polina\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\polina\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\polina\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 C:\Users\polina\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\xNet.dll
@@ -69,22 +69,3 @@ C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\Win
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
-<<<<<<< HEAD
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\bin\Debug\Database1.mdf
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\bin\Debug\Database1_log.ldf
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Insert.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.maincs.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Show.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UserControl1.resources
-C:\Users\Ваня\Documents\GitHub\cooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
-=======
->>>>>>> origin/master
