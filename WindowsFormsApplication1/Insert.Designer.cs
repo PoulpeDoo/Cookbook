@@ -61,6 +61,8 @@
             System.Windows.Forms.Label label20;
             System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label23;
+            System.Windows.Forms.Label label24;
+            System.Windows.Forms.Label label25;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Insert));
             this.step10TextBox = new System.Windows.Forms.TextBox();
             this.step8TextBox = new System.Windows.Forms.TextBox();
@@ -126,6 +128,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             label21 = new System.Windows.Forms.Label();
             step10Label = new System.Windows.Forms.Label();
             step9Label = new System.Windows.Forms.Label();
@@ -159,6 +163,8 @@
             label20 = new System.Windows.Forms.Label();
             label22 = new System.Windows.Forms.Label();
             label23 = new System.Windows.Forms.Label();
+            label24 = new System.Windows.Forms.Label();
+            label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,7 +198,7 @@
             // step8Label
             // 
             step8Label.AutoSize = true;
-            step8Label.Location = new System.Drawing.Point(624, 472);
+            step8Label.Location = new System.Drawing.Point(584, 472);
             step8Label.Name = "step8Label";
             step8Label.Size = new System.Drawing.Size(36, 13);
             step8Label.TabIndex = 208;
@@ -201,7 +207,7 @@
             // step7Label
             // 
             step7Label.AutoSize = true;
-            step7Label.Location = new System.Drawing.Point(624, 446);
+            step7Label.Location = new System.Drawing.Point(584, 446);
             step7Label.Name = "step7Label";
             step7Label.Size = new System.Drawing.Size(36, 13);
             step7Label.TabIndex = 206;
@@ -210,7 +216,7 @@
             // step6Label
             // 
             step6Label.AutoSize = true;
-            step6Label.Location = new System.Drawing.Point(624, 420);
+            step6Label.Location = new System.Drawing.Point(584, 420);
             step6Label.Name = "step6Label";
             step6Label.Size = new System.Drawing.Size(36, 13);
             step6Label.TabIndex = 204;
@@ -219,7 +225,7 @@
             // step5Label
             // 
             step5Label.AutoSize = true;
-            step5Label.Location = new System.Drawing.Point(624, 394);
+            step5Label.Location = new System.Drawing.Point(584, 394);
             step5Label.Name = "step5Label";
             step5Label.Size = new System.Drawing.Size(36, 13);
             step5Label.TabIndex = 202;
@@ -228,7 +234,7 @@
             // step4Label
             // 
             step4Label.AutoSize = true;
-            step4Label.Location = new System.Drawing.Point(624, 368);
+            step4Label.Location = new System.Drawing.Point(584, 368);
             step4Label.Name = "step4Label";
             step4Label.Size = new System.Drawing.Size(36, 13);
             step4Label.TabIndex = 200;
@@ -237,7 +243,7 @@
             // step3Label
             // 
             step3Label.AutoSize = true;
-            step3Label.Location = new System.Drawing.Point(624, 342);
+            step3Label.Location = new System.Drawing.Point(584, 342);
             step3Label.Name = "step3Label";
             step3Label.Size = new System.Drawing.Size(36, 13);
             step3Label.TabIndex = 198;
@@ -246,7 +252,7 @@
             // step2Label
             // 
             step2Label.AutoSize = true;
-            step2Label.Location = new System.Drawing.Point(624, 316);
+            step2Label.Location = new System.Drawing.Point(584, 316);
             step2Label.Name = "step2Label";
             step2Label.Size = new System.Drawing.Size(36, 13);
             step2Label.TabIndex = 196;
@@ -255,7 +261,7 @@
             // step1Label
             // 
             step1Label.AutoSize = true;
-            step1Label.Location = new System.Drawing.Point(624, 290);
+            step1Label.Location = new System.Drawing.Point(584, 290);
             step1Label.Name = "step1Label";
             step1Label.Size = new System.Drawing.Size(36, 13);
             step1Label.TabIndex = 194;
@@ -399,7 +405,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new System.Drawing.Point(39, 635);
+            label17.Location = new System.Drawing.Point(169, 626);
             label17.Name = "label17";
             label17.Size = new System.Drawing.Size(19, 13);
             label17.TabIndex = 227;
@@ -408,7 +414,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new System.Drawing.Point(39, 609);
+            label16.Location = new System.Drawing.Point(169, 600);
             label16.Name = "label16";
             label16.Size = new System.Drawing.Size(19, 13);
             label16.TabIndex = 228;
@@ -417,7 +423,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new System.Drawing.Point(39, 661);
+            label15.Location = new System.Drawing.Point(169, 652);
             label15.Name = "label15";
             label15.Size = new System.Drawing.Size(19, 13);
             label15.TabIndex = 229;
@@ -468,119 +474,119 @@
             // 
             // step8TextBox
             // 
-            this.step8TextBox.Location = new System.Drawing.Point(698, 469);
+            this.step8TextBox.Location = new System.Drawing.Point(658, 469);
             this.step8TextBox.Name = "step8TextBox";
             this.step8TextBox.Size = new System.Drawing.Size(380, 20);
             this.step8TextBox.TabIndex = 209;
             // 
             // step7TextBox
             // 
-            this.step7TextBox.Location = new System.Drawing.Point(698, 443);
+            this.step7TextBox.Location = new System.Drawing.Point(658, 443);
             this.step7TextBox.Name = "step7TextBox";
             this.step7TextBox.Size = new System.Drawing.Size(380, 20);
             this.step7TextBox.TabIndex = 207;
             // 
             // step6TextBox
             // 
-            this.step6TextBox.Location = new System.Drawing.Point(698, 417);
+            this.step6TextBox.Location = new System.Drawing.Point(658, 417);
             this.step6TextBox.Name = "step6TextBox";
             this.step6TextBox.Size = new System.Drawing.Size(380, 20);
             this.step6TextBox.TabIndex = 205;
             // 
             // step5TextBox
             // 
-            this.step5TextBox.Location = new System.Drawing.Point(698, 391);
+            this.step5TextBox.Location = new System.Drawing.Point(658, 391);
             this.step5TextBox.Name = "step5TextBox";
             this.step5TextBox.Size = new System.Drawing.Size(380, 20);
             this.step5TextBox.TabIndex = 203;
             // 
             // step4TextBox
             // 
-            this.step4TextBox.Location = new System.Drawing.Point(698, 365);
+            this.step4TextBox.Location = new System.Drawing.Point(658, 365);
             this.step4TextBox.Name = "step4TextBox";
             this.step4TextBox.Size = new System.Drawing.Size(380, 20);
             this.step4TextBox.TabIndex = 201;
             // 
             // step3TextBox
             // 
-            this.step3TextBox.Location = new System.Drawing.Point(698, 339);
+            this.step3TextBox.Location = new System.Drawing.Point(658, 339);
             this.step3TextBox.Name = "step3TextBox";
             this.step3TextBox.Size = new System.Drawing.Size(380, 20);
             this.step3TextBox.TabIndex = 199;
             // 
             // step2TextBox
             // 
-            this.step2TextBox.Location = new System.Drawing.Point(698, 313);
+            this.step2TextBox.Location = new System.Drawing.Point(658, 313);
             this.step2TextBox.Name = "step2TextBox";
             this.step2TextBox.Size = new System.Drawing.Size(380, 20);
             this.step2TextBox.TabIndex = 197;
             // 
             // step1TextBox
             // 
-            this.step1TextBox.Location = new System.Drawing.Point(698, 287);
+            this.step1TextBox.Location = new System.Drawing.Point(658, 287);
             this.step1TextBox.Name = "step1TextBox";
             this.step1TextBox.Size = new System.Drawing.Size(380, 20);
             this.step1TextBox.TabIndex = 195;
             // 
             // meraIng15TextBox
             // 
-            this.meraIng15TextBox.Location = new System.Drawing.Point(338, 658);
+            this.meraIng15TextBox.Location = new System.Drawing.Point(468, 649);
             this.meraIng15TextBox.Name = "meraIng15TextBox";
             this.meraIng15TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng15TextBox.TabIndex = 193;
             // 
             // sumIng15TextBox
             // 
-            this.sumIng15TextBox.Location = new System.Drawing.Point(198, 658);
+            this.sumIng15TextBox.Location = new System.Drawing.Point(328, 649);
             this.sumIng15TextBox.Name = "sumIng15TextBox";
             this.sumIng15TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng15TextBox.TabIndex = 192;
             // 
             // nameIng15TextBox
             // 
-            this.nameIng15TextBox.Location = new System.Drawing.Point(58, 658);
+            this.nameIng15TextBox.Location = new System.Drawing.Point(188, 649);
             this.nameIng15TextBox.Name = "nameIng15TextBox";
             this.nameIng15TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng15TextBox.TabIndex = 191;
             // 
             // meraIng14TextBox
             // 
-            this.meraIng14TextBox.Location = new System.Drawing.Point(338, 632);
+            this.meraIng14TextBox.Location = new System.Drawing.Point(468, 623);
             this.meraIng14TextBox.Name = "meraIng14TextBox";
             this.meraIng14TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng14TextBox.TabIndex = 190;
             // 
             // sumIng14TextBox
             // 
-            this.sumIng14TextBox.Location = new System.Drawing.Point(198, 632);
+            this.sumIng14TextBox.Location = new System.Drawing.Point(328, 623);
             this.sumIng14TextBox.Name = "sumIng14TextBox";
             this.sumIng14TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng14TextBox.TabIndex = 189;
             // 
             // nameIng14TextBox
             // 
-            this.nameIng14TextBox.Location = new System.Drawing.Point(58, 632);
+            this.nameIng14TextBox.Location = new System.Drawing.Point(188, 623);
             this.nameIng14TextBox.Name = "nameIng14TextBox";
             this.nameIng14TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng14TextBox.TabIndex = 188;
             // 
             // meraIng13TextBox
             // 
-            this.meraIng13TextBox.Location = new System.Drawing.Point(338, 606);
+            this.meraIng13TextBox.Location = new System.Drawing.Point(468, 597);
             this.meraIng13TextBox.Name = "meraIng13TextBox";
             this.meraIng13TextBox.Size = new System.Drawing.Size(100, 20);
             this.meraIng13TextBox.TabIndex = 187;
             // 
             // sumIng13TextBox
             // 
-            this.sumIng13TextBox.Location = new System.Drawing.Point(198, 606);
+            this.sumIng13TextBox.Location = new System.Drawing.Point(328, 597);
             this.sumIng13TextBox.Name = "sumIng13TextBox";
             this.sumIng13TextBox.Size = new System.Drawing.Size(100, 20);
             this.sumIng13TextBox.TabIndex = 186;
             // 
             // nameIng13TextBox
             // 
-            this.nameIng13TextBox.Location = new System.Drawing.Point(58, 606);
+            this.nameIng13TextBox.Location = new System.Drawing.Point(188, 597);
             this.nameIng13TextBox.Name = "nameIng13TextBox";
             this.nameIng13TextBox.Size = new System.Drawing.Size(100, 20);
             this.nameIng13TextBox.TabIndex = 185;
@@ -873,7 +879,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(816, 248);
+            this.label18.Location = new System.Drawing.Point(776, 248);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(150, 29);
             this.label18.TabIndex = 230;
@@ -917,6 +923,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(label25);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(label24);
+            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(label23);
             this.panel1.Controls.Add(this.label18);
@@ -1014,6 +1024,38 @@
             this.panel1.Size = new System.Drawing.Size(1082, 687);
             this.panel1.TabIndex = 240;
             // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new System.Drawing.Point(584, 498);
+            label24.Name = "label24";
+            label24.Size = new System.Drawing.Size(36, 13);
+            label24.TabIndex = 240;
+            label24.Text = "Шаг 9";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(658, 495);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(380, 20);
+            this.textBox3.TabIndex = 241;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new System.Drawing.Point(584, 523);
+            label25.Name = "label25";
+            label25.Size = new System.Drawing.Size(42, 13);
+            label25.TabIndex = 242;
+            label25.Text = "Шаг 10";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(658, 520);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(380, 20);
+            this.textBox4.TabIndex = 243;
+            // 
             // Insert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1101,5 +1143,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

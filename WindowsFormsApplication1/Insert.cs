@@ -117,8 +117,8 @@ namespace WindowsFormsApplication1
             command.Parameters.AddWithValue("Step6", step6TextBox.Text);
             command.Parameters.AddWithValue("Step7", step7TextBox.Text);
             command.Parameters.AddWithValue("Step8", step8TextBox.Text);
-            command.Parameters.AddWithValue("Step9", step9TextBox.Text);
-            command.Parameters.AddWithValue("Step10", step10TextBox.Text);
+            command.Parameters.AddWithValue("Step9", textBox3.Text);
+            command.Parameters.AddWithValue("Step10", textBox4.Text);
 
 
             await command.ExecuteNonQueryAsync();
