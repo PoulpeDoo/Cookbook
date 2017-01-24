@@ -61,9 +61,8 @@
             System.Windows.Forms.Label label20;
             System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label23;
-            System.Windows.Forms.Label label24;
-            System.Windows.Forms.Label label25;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Insert));
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.step10TextBox = new System.Windows.Forms.TextBox();
             this.step8TextBox = new System.Windows.Forms.TextBox();
             this.step7TextBox = new System.Windows.Forms.TextBox();
@@ -128,8 +127,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             label21 = new System.Windows.Forms.Label();
             step10Label = new System.Windows.Forms.Label();
             step9Label = new System.Windows.Forms.Label();
@@ -163,8 +162,6 @@
             label20 = new System.Windows.Forms.Label();
             label22 = new System.Windows.Forms.Label();
             label23 = new System.Windows.Forms.Label();
-            label24 = new System.Windows.Forms.Label();
-            label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -464,6 +461,24 @@
             label23.Size = new System.Drawing.Size(105, 13);
             label23.TabIndex = 238;
             label23.Text = "Количество персон";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(584, 498);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 13);
+            this.label24.TabIndex = 240;
+            this.label24.Text = "Шаг 9";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(584, 523);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 13);
+            this.label25.TabIndex = 242;
+            this.label25.Text = "Шаг 10";
             // 
             // step10TextBox
             // 
@@ -859,6 +874,7 @@
             // 
             // nameTextBox
             // 
+            this.nameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.nameTextBox.Location = new System.Drawing.Point(278, 73);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(383, 20);
@@ -899,9 +915,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(173, 999);
+            this.button1.Location = new System.Drawing.Point(658, 562);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 35);
+            this.button1.Size = new System.Drawing.Size(380, 51);
             this.button1.TabIndex = 235;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -923,9 +939,10 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(label25);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(label24);
+            this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(label23);
@@ -1024,14 +1041,12 @@
             this.panel1.Size = new System.Drawing.Size(1082, 687);
             this.panel1.TabIndex = 240;
             // 
-            // label24
+            // textBox4
             // 
-            label24.AutoSize = true;
-            label24.Location = new System.Drawing.Point(584, 498);
-            label24.Name = "label24";
-            label24.Size = new System.Drawing.Size(36, 13);
-            label24.TabIndex = 240;
-            label24.Text = "Шаг 9";
+            this.textBox4.Location = new System.Drawing.Point(658, 520);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(380, 20);
+            this.textBox4.TabIndex = 243;
             // 
             // textBox3
             // 
@@ -1040,30 +1055,12 @@
             this.textBox3.Size = new System.Drawing.Size(380, 20);
             this.textBox3.TabIndex = 241;
             // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Location = new System.Drawing.Point(584, 523);
-            label25.Name = "label25";
-            label25.Size = new System.Drawing.Size(42, 13);
-            label25.TabIndex = 242;
-            label25.Text = "Шаг 10";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(658, 520);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(380, 20);
-            this.textBox4.TabIndex = 243;
-            // 
             // Insert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1362, 711);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(step9Label);
             this.Controls.Add(step10Label);
             this.Controls.Add(this.step10TextBox);
@@ -1145,5 +1142,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }
