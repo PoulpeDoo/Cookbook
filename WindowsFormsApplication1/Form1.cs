@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        public EventHandler Addresepy_Load { get; private set; }
+        //public EventHandler Addresepy_Load { get; private set; }
 
         public Form1()
         {
@@ -24,16 +24,18 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             int countPage = GetCountPages();
-            int top = 50;
-            int left = 100;
-            int top2 = 50;
-            int left2 = 225;
+            int top       = 50;
+            int left      = 100;
+            int top2      = 50;
+            int left2     = 225;
+
             for (int i = 1; i < countPage; i++)
             {
                 string[] str = GetText(i).Split('\n');
-
                 string[] img = GetImg(i).Split('\n');
+                
                 for (int j = 0; j < str.Length - 2; j++)
                 {
                     if (img[j] == "")
@@ -52,18 +54,18 @@ namespace WindowsFormsApplication1
                     top       += btn.Height + 2;
                     btn.Click += new System.EventHandler(resepy);
 
-
-                    PictureBox pic = new PictureBox();
-                    pic.Left = left2;
-                    pic.Top = top2;
-                    pic.Height = 60;
-                    pic.Width = 200;
-                    pic.ImageLocation = img[j];
+                    PictureBox pic    = new PictureBox();
+                    pic.Left          = left2;
+                    pic.Top           = top2;
+                    pic.Height        = 60;
+                    pic.Width         = 200;                    
+                    pic.ImageLocation = "http:\\\\" + img[j];                    
                     this.Controls.Add(pic);
-                    top2 += pic.Height + 2;
+                    top2         += pic.Height + 2;
                     pic.SizeMode = PictureBoxSizeMode.CenterImage;
-                    
+
                 }
+                
 
             }
 
@@ -81,7 +83,7 @@ namespace WindowsFormsApplication1
                     string[] urlImg;
 
                     sourcePage = Request.Get("http://www.edimdoma.ru/retsepty?page=" + num).ToString();
-                    urlImg = sourcePage.Substrings("<picture class=\"card__picture\"><img src=\"", "\" alt=\"", 0);
+                    urlImg     = sourcePage.Substrings("<picture class=\"card__picture\"><img src=\"//", "\" alt=\"", 0);
 
                     for (int i = 0; i <= urlImg.Length; i++)
                     {
@@ -112,7 +114,7 @@ namespace WindowsFormsApplication1
                     string[] title;
 
                     sourcePage = Request.Get("http://www.edimdoma.ru/retsepty?page=" + num).ToString();
-                    title = sourcePage.Substrings("<div class=\"card__title title\">", "</div>", 0);
+                    title      = sourcePage.Substrings("<div class=\"card__title title\">", "</div>", 0);
 
                     for (int i = 0; i <= title.Length; i++)
                     {
@@ -146,7 +148,7 @@ namespace WindowsFormsApplication1
                     string sourcePage;
 
                     sourcePage = Request.Get("http://www.edimdoma.ru/retsepty").ToString();
-                    countPage = Convert.ToInt32(sourcePage.Substrings("/retsepty?page=", "\" class=\" paginator__item\">")[3]);
+                    countPage  = Convert.ToInt32(sourcePage.Substrings("/retsepty?page=", "\" class=\" paginator__item\">")[3]);
                 }
 
             }
