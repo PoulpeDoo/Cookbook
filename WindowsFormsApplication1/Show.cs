@@ -21,13 +21,14 @@ namespace WindowsFormsApplication1
            public Show()
         {
             InitializeComponent();
+           
         }
 
-       
-        
-         public void Show_Load(object sender, EventArgs e)
+        public void Show_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+
+            string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+           
             SqlConnection = new SqlConnection(connectionString);
             
             
@@ -38,14 +39,13 @@ namespace WindowsFormsApplication1
           int topbt = 85;
           int leftbt = 410;
           int leftTxt = 410;
-            int topTxt = 135;
+          int topTxt = 135;
 
             using (SqlConnection)
             {
                 SqlConnection.Open();
                 SqlDataReader reader = command.ExecuteReader();
-                //id = Convert.ToString(reader["Name"]);
-
+                
                 while (reader.Read())
                 {
 
@@ -82,22 +82,19 @@ namespace WindowsFormsApplication1
                     toppb += pb.Height + 10;
                     bt.Click += new System.EventHandler(resepy);
                     result += Convert.ToString(reader["Id"]);
-
                 }
-          
               reader.Close();
             }
+            SqlConnection.Close();
         }
-
 
         public void resepy(object sender , EventArgs e)
         {
-
             IdResepy = Int32.Parse(Convert.ToString((sender as Button).Tag));
             OpenResepy f = new OpenResepy(this);
             f.ShowDialog();
-            
         }
+
         private void progressBar1_Click(object sender, EventArgs e)
         {
 

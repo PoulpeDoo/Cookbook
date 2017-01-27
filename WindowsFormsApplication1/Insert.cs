@@ -18,54 +18,28 @@ namespace WindowsFormsApplication1
         public Insert()
         {
             InitializeComponent();
-    
-        }
+    }
 
         private void Insert_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-
-            SqlConnection = new SqlConnection(connectionString);
-
-            SqlConnection.Open();
-
-            //    SqlDataReader SqlReader = null;
-            //    SqlCommand command = new SqlCommand("SELECT * FROM [Table]", SqlConnection);
-
-            //    try
-            //        {
-            //        SqlReader = await command.ExecuteReaderAsync();
-            //        while (await SqlReader.ReadAsync())
-            //        {
-            //            //listBox1.Items.Add(Convert.ToString(SqlReader["Id"]) + "   " + Convert.ToString(SqlReader["Name"]) + "    " + Convert.ToString(SqlReader["Opicanie"]));
-            //        }
-            //    } 
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message.ToString(), ex.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //    finally
-            //    {
-            //        if (SqlReader != null)
-            //            SqlReader.Close();
-            //    }
-
-          
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+            string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
-           
-                    SqlCommand command = new SqlCommand("INSERT INTO [Table] (Name, Opicanie, Time, ImgUrl, Person, NameIng1, SumIng1, MeraIng1, NameIng2, SumIng2, MeraIng2,  NameIng3, SumIng3, MeraIng3, NameIng4, SumIng4, MeraIng4, NameIng5, SumIng5, MeraIng5, NameIng6, SumIng6, MeraIng6, NameIng7, SumIng7, MeraIng7, NameIng8, SumIng8, MeraIng8, NameIng9, SumIng9, MeraIng9, NameIng10, SumIng10, MeraIng10, NameIng11, SumIng11, MeraIng11, NameIng12, SumIng12, MeraIng12, NameIng13, SumIng13, MeraIng13, NameIng14, SumIng14, MeraIng14, NameIng15, SumIng15, MeraIng15, Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9, Step10) VALUES (@Name, @Opicanie, @Time, @ImgUrl, @Person, @NameIng1, @SumIng1, @MeraIng1, @NameIng2, @SumIng2, @MeraIng2, @NameIng3, @SumIng3, @MeraIng3, @NameIng4, @SumIng4, @MeraIng4, @NameIng5, @SumIng5, @MeraIng5, @NameIng6, @SumIng6, @MeraIng6, @NameIng7, @SumIng7, @MeraIng7, @NameIng8, @SumIng8, @MeraIng8, @NameIng9, @SumIng9, @MeraIng9, @NameIng10, @SumIng10, @MeraIng10, @NameIng11, @SumIng11, @MeraIng11, @NameIng12, @SumIng12, @MeraIng12, @NameIng13, @SumIng13, @MeraIng13, @NameIng14, @SumIng14, @MeraIng14, @NameIng15, @SumIng15, @MeraIng15, @Step1, @Step2, @Step3, @Step4, @Step5, @Step6, @Step7, @Step8, @Step9, @Step10)", SqlConnection);
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
 
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandType = CommandType.Text;
+                    command.CommandText = @"INSERT INTO [dbo].[Table] (Name, Opicanie, Time, ImgUrl, Person, NameIng1, SumIng1, MeraIng1, NameIng2, SumIng2, MeraIng2,  NameIng3, SumIng3, MeraIng3, NameIng4, SumIng4, MeraIng4, NameIng5, SumIng5, MeraIng5, NameIng6, SumIng6, MeraIng6, NameIng7, SumIng7, MeraIng7, NameIng8, SumIng8, MeraIng8, NameIng9, SumIng9, MeraIng9, NameIng10, SumIng10, MeraIng10, NameIng11, SumIng11, MeraIng11, NameIng12, SumIng12, MeraIng12, NameIng13, SumIng13, MeraIng13, NameIng14, SumIng14, MeraIng14, NameIng15, SumIng15, MeraIng15, Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9, Step10) VALUES (@Name, @Opicanie, @Time, @ImgUrl, @Person, @NameIng1, @SumIng1, @MeraIng1, @NameIng2, @SumIng2, @MeraIng2, @NameIng3, @SumIng3, @MeraIng3, @NameIng4, @SumIng4, @MeraIng4, @NameIng5, @SumIng5, @MeraIng5, @NameIng6, @SumIng6, @MeraIng6, @NameIng7, @SumIng7, @MeraIng7, @NameIng8, @SumIng8, @MeraIng8, @NameIng9, @SumIng9, @MeraIng9, @NameIng10, @SumIng10, @MeraIng10, @NameIng11, @SumIng11, @MeraIng11, @NameIng12, @SumIng12, @MeraIng12, @NameIng13, @SumIng13, @MeraIng13, @NameIng14, @SumIng14, @MeraIng14, @NameIng15, @SumIng15, @MeraIng15, @Step1, @Step2, @Step3, @Step4, @Step5, @Step6, @Step7, @Step8, @Step9, @Step10)";
 
-           
                     command.Parameters.AddWithValue("Name", nameTextBox.Text);
                     command.Parameters.AddWithValue("Opicanie", opicanieTextBox.Text);
                     command.Parameters.AddWithValue("Time", timeTextBox.Text);
@@ -126,25 +100,22 @@ namespace WindowsFormsApplication1
                     command.Parameters.AddWithValue("Step8", step8TextBox.Text);
                     command.Parameters.AddWithValue("Step9", textBox3.Text);
                     command.Parameters.AddWithValue("Step10", textBox4.Text);
-                    
 
-            if (nameTextBox.Text == "")
-            {
-                MessageBox.Show("Вы не ввели название рецепта");
+                    if (nameTextBox.Text == "")
+                    {
+                        MessageBox.Show("Вы не ввели название рецепта");
+                    }
+                    else
+                    {
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Поздравляем! Рецет успешно добавлен!");
+                        connection.Close();
+                        Close();
+                    }
+                }
             }
-            else
-            {
-                await command.ExecuteNonQueryAsync();
-                MessageBox.Show("Поздравляем! Рецет успешно добавлен!");
-                nameTextBox.BackColor = Color.White;
-                Close();
-            }
-
-            
-                    
-
-
-
+           
         }
     }
 }

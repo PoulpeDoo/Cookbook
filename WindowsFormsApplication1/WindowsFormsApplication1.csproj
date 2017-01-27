@@ -106,6 +106,12 @@
     <Compile Include="Show.Designer.cs">
       <DependentUpon>Show.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpDate.Designer.cs">
+      <DependentUpon>UpDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="Show.resx">
       <DependentUpon>Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpDate.resx">
+      <DependentUpon>UpDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
@@ -172,7 +181,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -182,8 +193,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

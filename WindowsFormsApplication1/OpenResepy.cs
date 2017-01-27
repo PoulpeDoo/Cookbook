@@ -14,13 +14,14 @@ namespace WindowsFormsApplication1
 {
     public partial class OpenResepy : Form
     {
-        int Id;
+        public int Id;
         public int k = 0;
         public float kof;
         public float Res;
         public int r = 0;
         public float Ing;
-        
+        public int IdResepy;
+        Form o;
 
         SqlConnection SqlConnection;
         public OpenResepy(Show f1)
@@ -28,7 +29,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             Id = f1.IdResepy;
             ratio.Text = "";
-          
+            
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -41,7 +42,7 @@ namespace WindowsFormsApplication1
             SqlConnection = new SqlConnection(connectionString);
             
             SqlCommand command = new SqlCommand("SELECT * FROM [Table] WHERE Id =" + Id, SqlConnection);
-           
+            button3.Tag = Id;
             using (SqlConnection)
             {
              
@@ -251,8 +252,8 @@ namespace WindowsFormsApplication1
 
                 while (reader.Read())
                 {
-
-                    r = int.Parse(Convert.ToString(reader["Person"]));
+                   
+                   r = int.Parse(Convert.ToString(reader["Person"]));
                     
                     ratio.Text = Convert.ToString(r);
                     Label lb1 = new Label();
@@ -270,6 +271,7 @@ namespace WindowsFormsApplication1
                     pb.Width = 500;
                     pb.ImageLocation = Convert.ToString(reader["ImgUrl"]);
                     this.Controls.Add(pb);
+                    pb.Tag = Convert.ToString(reader["Id"]);
 
                     Label lb2 = new Label();
                     lb2.Left = 100;
@@ -359,6 +361,14 @@ namespace WindowsFormsApplication1
         private void ratio_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void button3_Click(object sender, EventArgs e)
+        {
+            
+            UpDate o = new UpDate(this);
+            o.ShowDialog();
+            Close();
         }
     }
 

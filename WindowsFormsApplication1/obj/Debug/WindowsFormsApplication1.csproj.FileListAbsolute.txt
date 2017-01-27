@@ -41,7 +41,6 @@ C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsForms
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\bin\Debug\Database1.mdf
-C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\bin\Debug\Database1_log.ldf
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
@@ -69,3 +68,5 @@ C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\Win
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
+C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UpDate.resources
+C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\bin\Debug\Database1_log.ldf
