@@ -96,6 +96,7 @@
             this.Controls.Add(this.ratio);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "OpenResepy";
             this.Text = "OpenResepy";
             this.Load += new System.EventHandler(this.OpenResepy_Load);

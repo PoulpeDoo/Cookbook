@@ -21,6 +21,10 @@ namespace WindowsFormsApplication1
         public int r = 0;
         public float Ing;
         public int IdResepy;
+        int topbtn;
+        Label  lb5 = new Label();
+      
+        
         Form o;
 
         SqlConnection SqlConnection;
@@ -31,48 +35,34 @@ namespace WindowsFormsApplication1
             ratio.Text = "";
             
         }
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             r++;
             ratio.Text = Convert.ToString(r);
-            int toplb = 610;
-            int topstep = 0;
-                 
+            
+            
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
             SqlConnection = new SqlConnection(connectionString);
             
             SqlCommand command = new SqlCommand("SELECT * FROM [Table] WHERE Id =" + Id, SqlConnection);
-            button3.Tag = Id;
+           
             using (SqlConnection)
             {
              
                 SqlConnection.Open();
                 SqlDataReader reader = command.ExecuteReader();
-                toplb = 610;
                 while (reader.Read())
                 {
                     kof = 1 / (float.Parse(Convert.ToString(reader["Person"])));
                     
                     for (int j = 1; j < 16 && !(Convert.ToString(reader["NameIng" + j]) == ""); j++)
                     {
-                        this.Controls.RemoveByKey("lb4");
-                        this.Controls.RemoveByKey("lb5");
-                        
+                      this.Controls.RemoveByKey("lb5");
                     }
+                    int toplb = 610;
                     for (int j = 1; j < 16 && !(Convert.ToString(reader["NameIng" + j]) == ""); j++)
                     {
                         
-                        Label lb4 = new Label();
-                        lb4.Left = 100;
-                        lb4.Name = "lb4";
-                        lb4.Top = toplb;
-                        lb4.Height = 40;
-                        lb4.Width = 250;
-                        lb4.Tag = "lb4";
-                        lb4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                        lb4.Text = j + "    " + Convert.ToString(reader["NameIng" + j]);
-                        this.Controls.Add(lb4);
-
                         Ing = float.Parse(Convert.ToString(reader["SumIng" + j]));
                         Res = r*kof * Ing;
 
@@ -83,55 +73,27 @@ namespace WindowsFormsApplication1
                         lb5.Name = "lb5";
                         lb5.Width = 150;
                         lb5.Tag = "lb5";
-                        lb5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                                                
+                        lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
                         if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
                         {
                             lb5.Text = ""+ Convert.ToString(reader["MeraIng" + j]);
-
                         }
                         else
                         {
                             lb5.Text = Res + "       " + Convert.ToString(reader["MeraIng" + j]);
                         }
                         this.Controls.Add(lb5);
-                        k = j;
                         toplb = toplb + 40;
                     }
-
-                    topstep = toplb + 50;
-                    toplb = 610;
-
-
-                    for (int k = 1; k < 11 && !(Convert.ToString(reader["Step" + k]) == ""); k++)
-                    {
-                        this.Controls.RemoveByKey("lb6");
-                    }
-                    for (int k = 1; k < 11 && !(Convert.ToString(reader["Step" + k]) == ""); k++)
-                    {
-                        Label lb6 = new Label();
-                   
-                        lb6.Left = 100;
-                        lb6.Top = topstep;
-                        lb6.Height = 90;
-                        lb6.Width = 500;
-                        lb6.Tag = 225;
-                        lb6.Name = "lb6";
-                        lb6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                        lb6.Text = k + "    " + Convert.ToString(reader["Step" + k]);
-                        this.Controls.Add(lb6);
-                        topstep += 100;
-                        
-                    }
-
-                    toplb = 610;
+                    
                 }
                 reader.Close();
             }
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             
             r--;
@@ -165,24 +127,11 @@ namespace WindowsFormsApplication1
 
                     for (int j = 1; j < 16 && !(Convert.ToString(reader["NameIng" + j]) == ""); j++)
                     {
-                        this.Controls.RemoveByKey("lb4");
                         this.Controls.RemoveByKey("lb5");
                        
                     }
                     for (int j = 1; j < 16 && !(Convert.ToString(reader["NameIng" + j]) == ""); j++)
                     {
-
-                        Label lb4 = new Label();
-                        lb4.Left = 100;
-                        lb4.Name = "lb4";
-                        lb4.Top = toplb;
-                        lb4.Height = 40;
-                        lb4.Width = 250;
-                        lb4.Tag = "lb4";
-                        lb4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                        lb4.Text = j + "    " + Convert.ToString(reader["NameIng" + j]);
-                        this.Controls.Add(lb4);
-                        
                         Ing = float.Parse(Convert.ToString(reader["SumIng" + j]));
                         
                         Res = r*kof* Ing; 
@@ -193,7 +142,7 @@ namespace WindowsFormsApplication1
                         lb5.Name = "lb5";
                         lb5.Width = 150;
                         lb5.Tag = "lb5";
-                        lb5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                        lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
                         if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
                         {
@@ -211,26 +160,7 @@ namespace WindowsFormsApplication1
 
                     topstep = toplb + 50;
                     toplb = 610;
-                    for (int k = 1; k < 11 && !(Convert.ToString(reader["Step" + k]) == ""); k++)
-                    {
-                        this.Controls.RemoveByKey("lb6");
-                    }
-                    for (int k = 1; k < 11 && !(Convert.ToString(reader["Step" + k]) == ""); k++)
-                    {
-                        Label lb6 = new Label();
-
-                        lb6.Left = 100;
-                        lb6.Top = topstep;
-                        lb6.Height = 90;
-                        lb6.Width = 500;
-                        lb6.Tag = 225;
-                        lb6.Name = "lb6";
-                        lb6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                        lb6.Text = k + "    " + Convert.ToString(reader["Step" + k]);
-                        this.Controls.Add(lb6);
-                        topstep += 100;
-                    }
-                    toplb = 610;
+                   
                 }
                 reader.Close();
             }
@@ -295,31 +225,30 @@ namespace WindowsFormsApplication1
                     for (int j = 1; j < 16 && !(Convert.ToString(reader["NameIng" + j]) == ""); j++)
                     {
 
-                        Label lb4 = new Label();
+                        CheckBox lb4 = new CheckBox();
                         lb4.Left = 100;
                         lb4.Name = "lb4";
                         lb4.Top = toplb;
                         lb4.Height = 40;
                         lb4.Width = 250;
                         lb4.Tag = "lb4";
-                        lb4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                        lb4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                         lb4.Text = j + "    " + Convert.ToString(reader["NameIng" + j]);
                         this.Controls.Add(lb4);
 
+
                         Label lb5 = new Label();
-                                             
                         lb5.Left = 460;
                         lb5.Top = toplb;
                         lb5.Height = 40;
                         lb5.Name = "lb5";
                         lb5.Width = 150;
                         lb5.Tag = "lb5";
-                        lb5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                        lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
                         if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
                         {
                             lb5.Text = "" + Convert.ToString(reader["MeraIng" + j]);
-
                         }
                         else
                         {
@@ -330,6 +259,7 @@ namespace WindowsFormsApplication1
                         toplb = toplb + 40;
                     }
                     topstep = toplb + 50;
+                    topbtn = toplb + 10;
                     toplb = 610;
                     for (int k = 1; k < 11 && !(Convert.ToString(reader["Step" + k]) == ""); k++)
                     {
@@ -350,6 +280,14 @@ namespace WindowsFormsApplication1
                 }
                 reader.Close();
             }
+
+            Button btn = new Button();
+            btn.Text = "Добавить в список покупок";
+            btn.Top = topbtn;
+            btn.Width = 500;
+            btn.Left = 100;
+            this.Controls.Add(btn);
+
         }
 
         public void NumericUpDown_ValueChanged(object sender, EventArgs e)
@@ -370,6 +308,8 @@ namespace WindowsFormsApplication1
             o.ShowDialog();
             Close();
         }
+
+
     }
 
 
