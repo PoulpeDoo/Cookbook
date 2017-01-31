@@ -16,7 +16,6 @@ namespace WindowsFormsApplication1
     {
         public int IdResepy;
         string result = "";
-        Form f;
         SqlConnection SqlConnection;
            public Show()
         {

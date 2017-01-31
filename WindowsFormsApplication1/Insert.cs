@@ -13,8 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Insert : Form
     {
-        SqlConnection SqlConnection;
-        
+                
         public Insert()
         {
             InitializeComponent();
