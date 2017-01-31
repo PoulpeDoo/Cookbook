@@ -321,7 +321,7 @@ namespace WindowsFormsApplication1
         }
         public void AddShopList(object sender, EventArgs e)
         {
-
+            int err = 0;
             string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -347,31 +347,36 @@ namespace WindowsFormsApplication1
                         }
                         else
                         {
+                            err += 1;
                             command.Parameters.AddWithValue("NameIng" + (j + 1), "");
                             command.Parameters.AddWithValue("SumIng" + (j + 1), 0);
                             command.Parameters.AddWithValue("MeraIng" + (j + 1), "");
                         }
                     }
-                    for (int j = k; j < 15; j++)
+                    if (err == k)
+                    { MessageBox.Show("Выберите ингредиенты"); }
+                    else
                     {
-                        command.Parameters.AddWithValue("NameIng" + (j+1), "");
-                        command.Parameters.AddWithValue("SumIng" + (j+1), 0);
-                        command.Parameters.AddWithValue("MeraIng" + (j+1), "");
-                    }
+                        for (int j = k; j < 15; j++)
+                        {
+                            command.Parameters.AddWithValue("NameIng" + (j + 1), "");
+                            command.Parameters.AddWithValue("SumIng" + (j + 1), 0);
+                            command.Parameters.AddWithValue("MeraIng" + (j + 1), "");
+                        }
 
-                    try
-                    {
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("Рецепт добавлен в лист покупок");
-                        connection.Close();
-                        Close();
+                        try
+                        {
+                            connection.Open();
+                            command.ExecuteNonQuery();
+                            MessageBox.Show("Рецепт добавлен в лист покупок");
+                            connection.Close();
+                            Close();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Этот рецепт уже находится в списке покупок!");
+                        }
                     }
-                    catch
-                    {
-                        MessageBox.Show("Этот рецепт уже находится в списке покупок!");
-                    }
-
                 }
 
             }
