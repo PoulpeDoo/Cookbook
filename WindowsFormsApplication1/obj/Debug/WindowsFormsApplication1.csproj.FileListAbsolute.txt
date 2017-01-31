@@ -70,4 +70,8 @@ C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsForms
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.OpenResepy.resources
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UpDate.resources
 C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\bin\Debug\Database1_log.ldf
+<<<<<<< HEAD
 C:\Users\polina\Documents\GitHub\Cookbook\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.UpDate.resources
+=======
+C:\Users\mshil\OneDrive\Документы\GitHub\Cookbook\coooking\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ShopList.resources
+>>>>>>> origin/master
