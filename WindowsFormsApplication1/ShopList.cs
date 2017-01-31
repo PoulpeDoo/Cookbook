@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
     public partial class ShopList : Form
 
     {
+        Form f;
         public int top = 100;
         public int Delet = 0;
         public int[] l = new int[50];
@@ -144,6 +145,9 @@ namespace WindowsFormsApplication1
                             command.ExecuteNonQuery();
                             connection.Close();
                             MessageBox.Show("Рецепт удален из списка!");
+                            Close();
+                            f = new ShopList();
+                            f.Show();
 
                         }
                         else v += 1;
