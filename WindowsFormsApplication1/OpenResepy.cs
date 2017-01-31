@@ -74,7 +74,7 @@ namespace WindowsFormsApplication1
                         lb5.Width = 150;
                         lb5.Tag = "lb5";
                         lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+                        
                         if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
                         {
                             lb5.Text = ""+ Convert.ToString(reader["MeraIng" + j]);
@@ -137,13 +137,14 @@ namespace WindowsFormsApplication1
                         Res = r*kof* Ing; 
                         Label lb5 = new Label();
                         lb5.Left = 460;
-                        lb5.Top = toplb;
+                        //lb5.Top = toplb;
+                        
                         lb5.Height = 40;
                         lb5.Name = "lb5";
                         lb5.Width = 150;
                         lb5.Tag = "lb5";
                         lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+                        
                         if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
                         {
                             lb5.Text = "" + Convert.ToString(reader["MeraIng" + j]);
