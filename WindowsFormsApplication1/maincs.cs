@@ -48,5 +48,11 @@ namespace WindowsFormsApplication1
             f = new Show();
             f.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            f = new ShopList();
+            f.Show();
+        }
     }
 }
