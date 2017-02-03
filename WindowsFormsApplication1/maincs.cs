@@ -34,24 +34,28 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             f = new Insert();
+            f.WindowState = FormWindowState.Maximized;
             f.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             f = new Form1();
+            f.WindowState = FormWindowState.Maximized;
             f.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             f = new Show();
+            f.WindowState = FormWindowState.Maximized;
             f.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             f = new ShopList();
+            f.WindowState = FormWindowState.Maximized;
             f.Show();
         }
     }

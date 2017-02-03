@@ -67,22 +67,6 @@ namespace WindowsFormsApplication1
                     Label[] lb5 = new Label[15];
                     for (int j = 0; j < lb5.Length && !(Convert.ToString(reader["NameIng" + (j + 1)]) == ""); j++)
                     {
-//<<<<<<< HEAD
-                        
-//                        Ing = float.Parse(Convert.ToString(reader["SumIng" + j]));
-//                        Res = r*kof * Ing;
-
-//                        Label lb5 = new Label();
-//                        lb5.Left = 460;
-//                        lb5.Top = toplb;
-//                        lb5.Height = 40;
-//                        lb5.Name = "lb5";
-//                        lb5.Width = 150;
-//                        lb5.Tag = "lb5";
-//                        lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                        
-//                        if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
-//=======
 
                         NameIng[j] = Convert.ToString(reader["NameIng" + (j + 1)]);
                         MeraIng[j] = Convert.ToString(reader["MeraIng" + (j + 1)]);
@@ -98,7 +82,7 @@ namespace WindowsFormsApplication1
                         lb5[j].TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
                         if (int.Parse(Convert.ToString(reader["SumIng" + (j + 1)])) < 1)
-//>>>>>>> origin/master
+
                         {
                             lb5[j].Text = "" + Convert.ToString(reader["MeraIng" + (j + 1)]);
                         }
@@ -156,25 +140,6 @@ namespace WindowsFormsApplication1
                     Label[] lb5 = new Label[15];
                     for (int j = 0; j < lb5.Length && !(Convert.ToString(reader["NameIng" + (j + 1)]) == ""); j++)
                     {
-//<<<<<<< HEAD
-//                        Ing = float.Parse(Convert.ToString(reader["SumIng" + j]));
-                        
-//                        Res = r*kof* Ing; 
-//                        Label lb5 = new Label();
-//                        lb5.Left = 460;
-//                        //lb5.Top = toplb;
-                        
-//                        lb5.Height = 40;
-//                        lb5.Name = "lb5";
-//                        lb5.Width = 150;
-//                        lb5.Tag = "lb5";
-//                        lb5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                        
-//                        if (int.Parse(Convert.ToString(reader["SumIng" + j])) < 1)
-//                        {
-//                            lb5.Text = "" + Convert.ToString(reader["MeraIng" + j]);
-//=======
-//>>>>>>> origin/master
 
                         NameIng[j] = Convert.ToString(reader["NameIng" + (j + 1)]);
                         MeraIng[j] = Convert.ToString(reader["MeraIng" + (j + 1)]);
