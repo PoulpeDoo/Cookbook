@@ -13,16 +13,13 @@ namespace WindowsFormsApplication1
 {
     public partial class Insert : Form
     {
-                
+               
         public Insert()
         {
             InitializeComponent();
-    }
+        }
 
         private void Insert_Load(object sender, EventArgs e)
-        {
-        }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 

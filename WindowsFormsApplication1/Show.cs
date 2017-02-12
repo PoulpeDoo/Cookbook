@@ -95,14 +95,6 @@ namespace WindowsFormsApplication1
             f.ShowDialog();
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
-
-
-  
 
 }

@@ -37,10 +37,7 @@ namespace WindowsFormsApplication1
         public float[] SumIng = new float[15];
         public float[] SumIngRes = new float[15];
         public string[] MeraIng = new string[15];
-        
-        Form o;
 
-        SqlConnection SqlConnection;
         public OpenResepyHttp(Form1 f1)
         {
             InitializeComponent();
@@ -234,45 +231,54 @@ namespace WindowsFormsApplication1
                 txt.ScrollBars = ScrollBars.Vertical;
                 txt.Text = Opicanie;
                 this.Controls.Add(txt);
-
-                
+                                
                     title = sourcePage.Substrings("type=\"checkbox\" value=\"1\" /><span>", "<", 0);
                     for (int i = 0; i < title.Length && i <= 14; i++)
                     {
-
                         NameIng[i] = title[i];
-
                     }
-                         
-                    
+                                        
                     title = sourcePage.Substrings("<td class=\"definition-list-table__td definition-list-table__td_value\">", "</td>", 0);
 
                     for (int i = 0; i < title.Length && i <= 14; i++)
                     {
+                    try
+                    {
                         title[i] = title[i].Replace("&#189", "0.5");
-
-                 
+                    
                         MatchCollection mc = Regex.Matches(title[i], @"(?:\d*\.)?\d+");
                         StringBuilder sb = new StringBuilder();
 
                         foreach (Match matc in mc)
                             sb.Append(matc.Value);
-                    if (Convert.ToString(sb) == "0.5")
+                  
+                        if (Convert.ToString(sb) == "0.5")
+                        {
+                            SumIng[i] = 0.5F;
+                        }
+                        else if (Convert.ToString(sb) == "")
+                        {
+                            SumIng[i] = 0;
+                        }
+                        else
+                        {
+                            SumIng[i] = float.Parse(Convert.ToString(sb));
+                        }
+                    }
+                    catch
                     {
-                        SumIng[i] = 0.5F;
-                    }
-                    else if(Convert.ToString(sb) == "")
-                    {
-                        SumIng[i] = 0;
-                    }
-                    else
-                    {
-                         SumIng[i] = Convert.ToSingle(Convert.ToString(sb));
-                    }
-                    }
+                        title[i] = title[i].Replace("&#189", "");
+                        title[i] = title[i].Replace("0.5", "");
+                        MatchCollection mc = Regex.Matches(title[i], @"(?:\d*\.)?\d+");
+                        StringBuilder sb = new StringBuilder();
 
+                        foreach (Match matc in mc)
+                            sb.Append(matc.Value);
+                        SumIng[i] = float.Parse(Convert.ToString(sb));
 
-
+                    }
+                    }
+                    
                 title = sourcePage.Substrings("<td class=\"definition-list-table__td definition-list-table__td_value\">", "</td>", 0);
 
                 for (int i = 0; i < title.Length && i <= 14; i++)
@@ -326,7 +332,6 @@ namespace WindowsFormsApplication1
                     lb4[j].TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                     lb4[j].Text = (j + 1) + "    " + NameIng[j];
                     Controls.Add(lb4[j]);
-
                     k = j;
                     top = 635 + j * 40;
                 }
@@ -364,8 +369,7 @@ namespace WindowsFormsApplication1
                         Controls.Add(lb6[9]);
                     }
                     }
-
-
+                
             }
 
             Button btn = new Button();
@@ -441,7 +445,68 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandType = CommandType.Text;
+                    command.CommandText = @"INSERT INTO [dbo].[Table] (Name, Opicanie, Time, ImgUrl, Person, NameIng1, SumIng1, MeraIng1, NameIng2, SumIng2, MeraIng2,  NameIng3, SumIng3, MeraIng3, NameIng4, SumIng4, MeraIng4, NameIng5, SumIng5, MeraIng5, NameIng6, SumIng6, MeraIng6, NameIng7, SumIng7, MeraIng7, NameIng8, SumIng8, MeraIng8, NameIng9, SumIng9, MeraIng9, NameIng10, SumIng10, MeraIng10, NameIng11, SumIng11, MeraIng11, NameIng12, SumIng12, MeraIng12, NameIng13, SumIng13, MeraIng13, NameIng14, SumIng14, MeraIng14, NameIng15, SumIng15, MeraIng15, Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9, Step10) VALUES (@Name, @Opicanie, @Time, @ImgUrl, @Person, @NameIng1, @SumIng1, @MeraIng1, @NameIng2, @SumIng2, @MeraIng2, @NameIng3, @SumIng3, @MeraIng3, @NameIng4, @SumIng4, @MeraIng4, @NameIng5, @SumIng5, @MeraIng5, @NameIng6, @SumIng6, @MeraIng6, @NameIng7, @SumIng7, @MeraIng7, @NameIng8, @SumIng8, @MeraIng8, @NameIng9, @SumIng9, @MeraIng9, @NameIng10, @SumIng10, @MeraIng10, @NameIng11, @SumIng11, @MeraIng11, @NameIng12, @SumIng12, @MeraIng12, @NameIng13, @SumIng13, @MeraIng13, @NameIng14, @SumIng14, @MeraIng14, @NameIng15, @SumIng15, @MeraIng15, @Step1, @Step2, @Step3, @Step4, @Step5, @Step6, @Step7, @Step8, @Step9, @Step10)";
+
+                    command.Parameters.AddWithValue("Name", Name);
+                    command.Parameters.AddWithValue("Opicanie", Opicanie);
+                    command.Parameters.AddWithValue("Time", Time);
+                    command.Parameters.AddWithValue("ImgUrl", "http://"+ImgUrl);
+                    command.Parameters.AddWithValue("Person", Person);
+
+                    for (int j = 0; j < 15; j++)
+                    {
+
+                        if (NameIng[j] == null)
+                        {
+                            command.Parameters.AddWithValue("NameIng" + (j + 1), "");
+                            command.Parameters.AddWithValue("SumIng" + (j + 1), 0);
+                            command.Parameters.AddWithValue("MeraIng" + (j + 1), "");
+                        }
+                        else
+                        {
+                            command.Parameters.AddWithValue("NameIng" + (j + 1), NameIng[j]);
+                            command.Parameters.AddWithValue("SumIng" + (j + 1), SumIngRes[j]);
+                            command.Parameters.AddWithValue("MeraIng" + (j + 1), MeraIng[j]);
+                        }
+                     
+
+                    }
+
+                    for (int j = 0; j < 10; j++)
+                    {
+                        if (Step[j] == null)   command.Parameters.AddWithValue("Step" + (j + 1), "");
+                        else command.Parameters.AddWithValue("Step" + (j + 1), Step[j]);
+                    }
+
+
+                    try
+                    {
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Рецепт добавлен");
+                        connection.Close();
+                        Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Этот рецепт уже есть!");
+                    }
+                }
+                }
+
+            }
+        }
     }
 
-}
+

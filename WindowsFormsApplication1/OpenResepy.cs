@@ -65,7 +65,7 @@ namespace WindowsFormsApplication1
                     }
                  
                     Label[] lb5 = new Label[15];
-                    for (int j = 0; j < lb5.Length && !(Convert.ToString(reader["NameIng" + (j + 1)]) == ""); j++)
+                    for (int j = 0; j < lb5.Length && !((Convert.ToString(reader["NameIng" + (j + 1)])).Replace(" ", "") == ""); j++)
                     {
 
                         NameIng[j] = Convert.ToString(reader["NameIng" + (j + 1)]);
@@ -138,7 +138,7 @@ namespace WindowsFormsApplication1
                     }
 
                     Label[] lb5 = new Label[15];
-                    for (int j = 0; j < lb5.Length && !(Convert.ToString(reader["NameIng" + (j + 1)]) == ""); j++)
+                    for (int j = 0; j < lb5.Length && !((Convert.ToString(reader["NameIng" + (j + 1)])).Replace(" ", "") == ""); j++)
                     {
 
                         NameIng[j] = Convert.ToString(reader["NameIng" + (j + 1)]);
@@ -233,9 +233,9 @@ namespace WindowsFormsApplication1
                     Label[] lb5 = new Label[15];
                     CheckBox[] lb4 = new CheckBox[15];
 
-                    for (int j = 0; j < lb5.Length && !(Convert.ToString(reader["NameIng" + (j+1)]) == ""); j++)
+                    for (int j = 0; j < lb5.Length && !( (Convert.ToString(reader["NameIng" + (j+1)])).Replace(" ", "") == ""); j++)
                     {
-
+                       
                         NameIng[j] = Convert.ToString(reader["NameIng" + (j+1)]);
                         MeraIng[j] = Convert.ToString(reader["MeraIng" + (j+1)]);
                        
@@ -276,18 +276,32 @@ namespace WindowsFormsApplication1
 
 
                     Label[] lb6 = new Label[10];
-                    for (int k = 0; k < lb6.Length && !(Convert.ToString(reader["Step" + (k + 1)]) == ""); k++)
+                    for (int k = 0; k < lb6.Length && !((Convert.ToString(reader["Step" + (k + 1)])).Replace(" ", "") == ""); k++)
                     {
-                        lb6[k] = new System.Windows.Forms.Label();
-                        lb6[k].Location = new System.Drawing.Point(100, top + (k+1) * 100);
-                        lb6[k].Height = 90;
-                        lb6[k].Width = 500;
-                        lb6[k].Name = "lb6" + (k + 1).ToString();
-                        lb6[k].TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                        lb6[k].Text = k + 1 + "    " + Convert.ToString(reader["Step" + (k + 1)]);
-                        Controls.Add(lb6[k]);
+                        if (k == 9)
+                        {
+                            lb6[k] = new System.Windows.Forms.Label();
+                            lb6[k].Location = new System.Drawing.Point(100, top + (k + 1) * 100);
+                            lb6[k].Height = 250;
+                            lb6[k].Width = 500;
+                            lb6[k].Name = "lb6" + (k + 1).ToString();
+                            lb6[k].TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                            lb6[k].Text = k + 1 + "    " + Convert.ToString(reader["Step" + (k + 1)]);
+                            Controls.Add(lb6[k]);
+                        }
+                        else
+                        {
+                            lb6[k] = new System.Windows.Forms.Label();
+                            lb6[k].Location = new System.Drawing.Point(100, top + (k + 1) * 100);
+                            lb6[k].Height = 90;
+                            lb6[k].Width = 500;
+                            lb6[k].Name = "lb6" + (k + 1).ToString();
+                            lb6[k].TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                            lb6[k].Text = k + 1 + "    " + Convert.ToString(reader["Step" + (k + 1)]);
+                            Controls.Add(lb6[k]);
+                        }
                     }
-                   
+                    
                 }
                 reader.Close();
             }
@@ -299,17 +313,6 @@ namespace WindowsFormsApplication1
             btn.Location = new System.Drawing.Point(100, top + 50);
             btn.Click += new System.EventHandler(AddShopList);
             this.Controls.Add(btn);
-
-        }
-
-        public void NumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void ratio_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -382,11 +385,6 @@ namespace WindowsFormsApplication1
 
             }
            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 

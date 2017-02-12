@@ -63,7 +63,7 @@
             this.ratio.Size = new System.Drawing.Size(35, 13);
             this.ratio.TabIndex = 2;
             this.ratio.Text = "label1";
-            this.ratio.Click += new System.EventHandler(this.ratio_Click);
+            
             // 
             // label1
             // 
@@ -73,7 +73,7 @@
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Персон";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // button3
             // 

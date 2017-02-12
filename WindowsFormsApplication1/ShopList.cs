@@ -120,44 +120,44 @@ namespace WindowsFormsApplication1
 
                 using (SqlCommand command = new SqlCommand())
                 {
+                    command.Connection = connection;
+                    command.CommandType = CommandType.Text;
+                    connection.Open();
                     try
                     {
                         for (int j = 0; j < Delet; j++)
                         {
                             if ((Controls["cb" + (j).ToString()] as CheckBox).Checked == true)
                             {
-                               
-                                command.Connection = connection;
-                                command.CommandType = CommandType.Text;
-                                command.CommandText = @"DELETE FROM ShopList WHERE IdResepy=" + l[j];
-                                connection.Open();
-                                command.ExecuteNonQuery();
-                                connection.Close();
-                                MessageBox.Show("Рецепт удален из списка!");
-                                Close();
-                                f = new ShopList();
-                                f.Show();
-
+                               command.CommandText = @"DELETE FROM ShopList WHERE IdResepy=" + l[j];
+                               command.ExecuteNonQuery();
                             }
                             else v += 1;
 
                         }
                 }
-                    catch
+                  catch  
                 {
-
+                        MessageBox.Show("Ошибка!");
                 }
-                if (v == Delet) MessageBox.Show("Cписок пуст!");
+                    if (v == Delet)
+                    {
+                        MessageBox.Show("Cписок пуст!");
+                    }
+                    else
+                    {
+                        connection.Close();
+                        MessageBox.Show("Рецепт удален из списка!");
+                        Close();
+                        f = new ShopList();
+                        f.Show();
+                    }
                 }
 
             }
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

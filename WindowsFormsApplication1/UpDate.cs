@@ -97,7 +97,7 @@ namespace WindowsFormsApplication1
                     step8TextBox.Text = Convert.ToString(reader["Step8"]);
                     step9TextBox.Text = Convert.ToString(reader["Step9"]);
                     step10TextBox.Text = Convert.ToString(reader["Step10"]);
-   
+
                 }
                 reader.Close();
             }
