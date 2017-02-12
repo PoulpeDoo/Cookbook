@@ -107,18 +107,6 @@ namespace WindowsFormsApplication1
                     }
                 }
 
-                //top += 40;
-                //Button print = new Button();
-                //print = new System.Windows.Forms.Button();
-                //print.Location = new System.Drawing.Point(100, top);
-                //print.Height = 70;
-                //print.Width = 450;
-                //print.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                //print.Text = "Печать";
-                //print.Click += new System.EventHandler(printButton);
-                //Controls.Add(print);
-                
-                //reader.Close();
             }
         }
 
@@ -132,38 +120,40 @@ namespace WindowsFormsApplication1
 
                 using (SqlCommand command = new SqlCommand())
                 {
-
-                    for (int j = 0; j < Delet; j++)
+                    try
                     {
-                        if ((Controls["cb" + (j).ToString()] as CheckBox).Checked == true)
+                        for (int j = 0; j < Delet; j++)
                         {
+                            if ((Controls["cb" + (j).ToString()] as CheckBox).Checked == true)
+                            {
+                               
+                                command.Connection = connection;
+                                command.CommandType = CommandType.Text;
+                                command.CommandText = @"DELETE FROM ShopList WHERE IdResepy=" + l[j];
+                                connection.Open();
+                                command.ExecuteNonQuery();
+                                connection.Close();
+                                MessageBox.Show("Рецепт удален из списка!");
+                                Close();
+                                f = new ShopList();
+                                f.Show();
 
-                            command.Connection = connection;
-                            command.CommandType = CommandType.Text;
-                            command.CommandText = @"DELETE FROM ShopList WHERE IdResepy=" + l[j];
-                            connection.Open();
-                            command.ExecuteNonQuery();
-                            connection.Close();
-                            MessageBox.Show("Рецепт удален из списка!");
-                            Close();
-                            f = new ShopList();
-                            f.Show();
+                            }
+                            else v += 1;
 
                         }
-                        else v += 1;
+                }
+                    catch
+                {
 
-                    }
-
-                    if (v == Delet) MessageBox.Show("Cписок пуст!");
+                }
+                if (v == Delet) MessageBox.Show("Cписок пуст!");
                 }
 
             }
 
         }
-        //public void printButton(object sender, EventArgs e)
-        //{
 
-        //}
         private void label1_Click(object sender, EventArgs e)
         {
 

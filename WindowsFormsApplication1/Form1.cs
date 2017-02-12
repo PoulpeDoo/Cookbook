@@ -15,8 +15,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        //public EventHandler Addresepy_Load { get; private set; }
-
+        public string http;
         public Form1()
         {
             InitializeComponent();
@@ -24,24 +23,22 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+      
             int countPage = GetCountPages();
-            int top       = 50;
-            int left      = 100;
-            int top2      = 50;
-            int left2     = 225;
+            
+            int top   = 50;
+            int left  = 100;
+            int top2  = 50;
+            int left2 = 225;
 
             for (int i = 1; i < countPage; i++)
             {
                 string[] str = GetText(i).Split('\n');
                 string[] img = GetImg(i).Split('\n');
-                
+                string[] abc = GetUrl(i).Split('\n');
+
                 for (int j = 0; j < str.Length - 2; j++)
                 {
-                    if (img[j] == "")
-                    {
-                        img[j] = "http://cdn1.imgbb.ru/community/118/1181993/cf13d0754deabbc16df8728701923540.jpg";
-                    }
 
                     Button btn = new Button();
                     btn.Left   = left;
@@ -49,31 +46,31 @@ namespace WindowsFormsApplication1
                     btn.Height = 60;
                     btn.Width  = 200;
                     btn.Text   = str[j];
-                    btn.Tag    = "resepty";
+                    btn.Tag    = abc[j];
                     this.Controls.Add(btn);
-                    top       += btn.Height + 2;
-                    btn.Click += new System.EventHandler(resepy);
+                    top        += btn.Height + 2;
+                    btn.Click  += new System.EventHandler(resepy);
 
                     PictureBox pic    = new PictureBox();
                     pic.Left          = left2;
                     pic.Top           = top2;
                     pic.Height        = 60;
                     pic.Width         = 200;                    
-                    pic.ImageLocation = "http:\\\\" + img[j];                    
+                    pic.ImageLocation = @"C:\Users\polina\Documents\GitHub\Cookbook\imgForPars\" + i + j + "рец.jpg";                    
+                    pic.SizeMode      = PictureBoxSizeMode.StretchImage;
                     this.Controls.Add(pic);
-                    top2         += pic.Height + 2;
-                    pic.SizeMode = PictureBoxSizeMode.CenterImage;
-
+                    top2 += pic.Height + 2;
+                    
                 }
-                
 
             }
 
         }
-
+        
         private string GetImg(int num)
         {
-            string url = "";
+            string file = "";
+            string url  = "";
 
             try
             {
@@ -84,11 +81,14 @@ namespace WindowsFormsApplication1
 
                     sourcePage = Request.Get("http://www.edimdoma.ru/retsepty?page=" + num).ToString();
                     urlImg     = sourcePage.Substrings("<picture class=\"card__picture\"><img src=\"//", "\" alt=\"", 0);
+                    
 
                     for (int i = 0; i <= urlImg.Length; i++)
-                    {
-                        url += urlImg[i] + "\r\n";
-
+                    {                                                                    
+                        url  = "http://" + urlImg[i];
+                        string s = urlImg[i].Substring(urlImg[i].IndexOf('?'));
+                        file = @"C:\Users\polina\Documents\GitHub\Cookbook\imgForPars\" + num + i + "рец.jpg";
+                        Request.Get(url).ToFile(file);                        
                     }
                 }
             }
@@ -96,8 +96,8 @@ namespace WindowsFormsApplication1
             {
 
             }
-
-            return url;
+            
+            return file;
         }
 
         private string GetText(int num)
@@ -119,8 +119,7 @@ namespace WindowsFormsApplication1
                     for (int i = 0; i <= title.Length; i++)
                     {
 
-                        names += title[i] + "\r\n";
-                        //Request.Get("http://img1.russianfood.com/dycontent/images_upl/168/sm_167111.jpg").ToFile(@"C:\users\alex\desktop\img.jpg");
+                        names += title[i] + "\r\n";                        
 
                     }
 
@@ -136,10 +135,56 @@ namespace WindowsFormsApplication1
             return names;
         }
 
+
+
+
+        private string GetUrl(int num)
+        {
+            string Url = "";
+
+            try
+            {
+
+                using (var Request = new HttpRequest())
+                {
+
+                    string sourcePage;
+                    string[] TextUrl;
+
+                    sourcePage = Request.Get("http://www.edimdoma.ru/retsepty?page=" + num).ToString();
+                    TextUrl = sourcePage.Substrings("<div class=\"card__description\"><a href=\"/", "\"><div class=\"card__title title\">", 0);
+
+
+
+
+                    for (int i = 0; i <= TextUrl.Length; i++)
+                    {
+
+                        Url += "https://www.edimdoma.ru/" + TextUrl[i] + "\r\n";
+
+                    }
+
+                }
+
+
+            }
+            catch
+            {
+
+            }
+
+            return Url;
+        }
+
+
+
+
+
+
         private int GetCountPages()
         {
             int countPage = 0;
-
+            
             try
             {
 
@@ -158,7 +203,11 @@ namespace WindowsFormsApplication1
 
         private void resepy(object sender, EventArgs e)
         {
-            MessageBox.Show("Тест");
+            http = Convert.ToString((sender as Button).Tag);
+            OpenResepyHttp f = new OpenResepyHttp(this);
+            f.WindowState = FormWindowState.Maximized;
+            f.ShowDialog();
+
         }
     }
 }

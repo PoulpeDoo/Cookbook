@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label21;
-            System.Windows.Forms.Label step10Label;
-            System.Windows.Forms.Label step9Label;
             System.Windows.Forms.Label step8Label;
             System.Windows.Forms.Label step7Label;
             System.Windows.Forms.Label step6Label;
@@ -63,7 +61,6 @@
             System.Windows.Forms.Label label23;
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.step10TextBox = new System.Windows.Forms.TextBox();
             this.step8TextBox = new System.Windows.Forms.TextBox();
             this.step7TextBox = new System.Windows.Forms.TextBox();
             this.step6TextBox = new System.Windows.Forms.TextBox();
@@ -130,8 +127,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             label21 = new System.Windows.Forms.Label();
-            step10Label = new System.Windows.Forms.Label();
-            step9Label = new System.Windows.Forms.Label();
             step8Label = new System.Windows.Forms.Label();
             step7Label = new System.Windows.Forms.Label();
             step6Label = new System.Windows.Forms.Label();
@@ -173,24 +168,6 @@
             label21.Size = new System.Drawing.Size(34, 13);
             label21.TabIndex = 233;
             label21.Text = "Мера";
-            // 
-            // step10Label
-            // 
-            step10Label.AutoSize = true;
-            step10Label.Location = new System.Drawing.Point(49, 960);
-            step10Label.Name = "step10Label";
-            step10Label.Size = new System.Drawing.Size(42, 13);
-            step10Label.TabIndex = 212;
-            step10Label.Text = "Шаг 10";
-            // 
-            // step9Label
-            // 
-            step9Label.AutoSize = true;
-            step9Label.Location = new System.Drawing.Point(49, 934);
-            step9Label.Name = "step9Label";
-            step9Label.Size = new System.Drawing.Size(36, 13);
-            step9Label.TabIndex = 210;
-            step9Label.Text = "Шаг 9";
             // 
             // step8Label
             // 
@@ -479,13 +456,6 @@
             this.label25.Size = new System.Drawing.Size(42, 13);
             this.label25.TabIndex = 242;
             this.label25.Text = "Шаг 10";
-            // 
-            // step10TextBox
-            // 
-            this.step10TextBox.Location = new System.Drawing.Point(123, 957);
-            this.step10TextBox.Name = "step10TextBox";
-            this.step10TextBox.Size = new System.Drawing.Size(380, 20);
-            this.step10TextBox.TabIndex = 213;
             // 
             // step8TextBox
             // 
@@ -1060,24 +1030,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 711);
+            this.ClientSize = new System.Drawing.Size(1362, 717);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(step9Label);
-            this.Controls.Add(step10Label);
-            this.Controls.Add(this.step10TextBox);
             this.Name = "Insert";
             this.Text = "Insert";
             this.Load += new System.EventHandler(this.Insert_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox step10TextBox;
         private System.Windows.Forms.TextBox step8TextBox;
         private System.Windows.Forms.TextBox step7TextBox;
         private System.Windows.Forms.TextBox step6TextBox;

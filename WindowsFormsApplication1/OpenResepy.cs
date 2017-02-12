@@ -82,6 +82,7 @@ namespace WindowsFormsApplication1
                         lb5[j].TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
                         if (int.Parse(Convert.ToString(reader["SumIng" + (j + 1)])) < 1)
+
                         {
                             lb5[j].Text = "" + Convert.ToString(reader["MeraIng" + (j + 1)]);
                         }
@@ -382,7 +383,11 @@ namespace WindowsFormsApplication1
             }
            
         }
-    
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
  }

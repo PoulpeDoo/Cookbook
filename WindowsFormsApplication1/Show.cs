@@ -91,6 +91,7 @@ namespace WindowsFormsApplication1
         {
             IdResepy = Int32.Parse(Convert.ToString((sender as Button).Tag));
             OpenResepy f = new OpenResepy(this);
+            f.WindowState = FormWindowState.Maximized;
             f.ShowDialog();
         }
 
